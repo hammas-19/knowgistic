@@ -1,9 +1,10 @@
 <template>
-    <footer class="bg-white dark:bg-gray-900">
-        <div class="container px-6 py-8 mx-auto">
+    <footer class="bg-harp dark:bg-gray-900">
+        <div class="container px-6 py-8 mx-auto bg-mineShaft rounded-t-3xl">
             <div class="text-center">
-                <a href="#"
-                    class="text-3xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Brand</a>
+                <span class="flex justify-center">
+                    <img src="images/index/logo.png" class="w-40" alt="Logo">
+                </span>
 
                 <div class="flex flex-wrap justify-center mt-5 -mx-4">
                     <a href="#"
