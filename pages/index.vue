@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="">
-                    <img src="images/index/banner.png" alt="">
+                    <img src="/images/index/banner.png" alt="">
                 </div>
 
             </div>
@@ -47,7 +47,7 @@
             <div class="container mx-auto py-10 md:py-20">
 
                 <div class="flex flex-col md:flex-row justify-center md:justify-between gap-5 md:gap-14 items-center">
-                    <img src="images/index/featureImg.png" alt="IntroImage">
+                    <img src="/images/index/featureImg.png" alt="IntroImage">
                     <div class="flex flex-col gap-8 text-left">
 
                         <span class="text-3xl font-semibold ">
@@ -87,7 +87,7 @@
 
                     <div v-for="items in 4"
                         class="bg-teaGreen text-shark rounded-3xl flex flex-col p-8 gap-5 max-w-[320px]">
-                        <img src="images/index/certificate.png" class="h-28 w-28" alt="CertificateImage">
+                        <img src="/images/index/certificate.png" class="h-28 w-28" alt="CertificateImage">
                         <span class="text-3xl">
                             Get Badges
                         </span>
@@ -118,7 +118,7 @@
 
                     <div v-for="items in 3" class="rounded-2xl bg-harp p-8 flex flex-col w-[320px] gap-8">
                         <span class="flex justify-center">
-                            <img src="images/index/teaching.png" class="h-40 w-40" alt="OnlineStudies">
+                            <img src="/images/index/teaching.png" class="h-40 w-40" alt="OnlineStudies">
                         </span>
 
                         <div class="flex justify-between w-full">
@@ -151,7 +151,7 @@
             <div class="container mx-auto py-10 md:py-20">
 
                 <div class="flex flex-col lg:flex-row-reverse justify-center gap-5 md:gap-8 items-center">
-                    <img src="images/index/featureImg.png" alt="IntroImage">
+                    <img src="/images/index/featureImg.png" alt="IntroImage">
                     <div
                         class="bg-mineShaft min-w-[220px] md:min-w-[670px] p-10 rounded-3xl flex flex-col gap-8 text-left">
 
@@ -188,7 +188,7 @@
         <section class="bg-harp">
             <div class="container mx-auto py-10 md :py-20">
                 <div class="flex flex-col md:flex-row justify-evenly gap-8 rounded-3xl bg-teaGreen text-shark p-10 items-center borderer">
-                    <img src="images/index/demo.png" class="h-[200px] md:h-[360px]" alt="demoImage">
+                    <img src="/images/index/demo.png" class="h-[200px] md:h-[360px]" alt="demoImage">
                     <div class="flex flex-col gap-5">
                         <span class="text-3xl">
                             Give It A Demo Shot !

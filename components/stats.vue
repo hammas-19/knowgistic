@@ -5,7 +5,7 @@
                         <div v-for="item in 3"
                         class="flex flex-col rounded-full pb-10 gap-5 border border-mineShaft bg-teaGreen text-center px-8 text-shark">
                         <span>
-                                <img src="images/index/online.png" class="md:w-40 md:h-40 h-20 w-20" alt="">
+                                <img src="/images/index/online.png" class="md:w-40 md:h-40 h-20 w-20" alt="">
                         </span>
                         <span class="text-4xl font-bold flex flex-col">
                                         3.5K
