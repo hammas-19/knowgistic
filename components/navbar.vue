@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto h-20 w-20 ">
-        <img src="/images/index/logo.png" class="shadow-" alt="">
+        <img src="/images/index_v1/logo.png" class="shadow-" alt="">
     </div>
     <nav class="relative dark:bg-cyanBlue bg-harp px-6 py-2">
         <div class="lg:flex lg:items-center lg:justify-between lg:container lg:mx-auto mx-0">
