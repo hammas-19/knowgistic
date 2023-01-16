@@ -53,7 +53,7 @@ const NavbarLink = [
     },
     {
         name: "profile",
-        href: "/courses",
+        href: "/userProfile",
     },
 ];
 

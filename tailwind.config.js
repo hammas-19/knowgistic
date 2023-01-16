@@ -15,20 +15,23 @@ module.exports = {
 				greatVibes: ['Great Vibes', 'cursive']
 			},
 			colors: {
-				harp: "#F5FAF8",
-				teaGreen: "#c5efca",
+				myst:"#e7ecef",
+				astronaut:"#274c77",
+        			nectarine: "#FF8656",
 				mineShaft: "#303030",
+
+				myst: "#F5FAF8",
+				teaGreen: "#c5efca",
 				concrete: "#f3f3f3",
 				shark: "#1d1e1e",
-        pharlap: "pharlap",
-        nectarine: "#FF8656",
+        			pharlap: "pharlap",
+				osloGrey: "#8D9094",
 
 				// Dark mode colors
 				skyBLue: "#007AFF",
 				cyanBlue: "#1D242C",
 				mirage: "#16191E",
 				nileBlue: "#183555",
-				osloGrey: "#8D9094",
 			},
 			backgroundImage: {
 				"progress-course":
