@@ -15,6 +15,7 @@ module.exports = {
 				greatVibes: ['Great Vibes', 'cursive']
 			},
 			colors: {
+				mercury:"#e6e6e6",
 				myst:"#e7ecef",
 				astronaut:"#274c77",
         			nectarine: "#FF8656",
