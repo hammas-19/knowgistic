@@ -4,7 +4,7 @@
             <div class="mx-auto max-w-screen-xl px-4 md:py-16 py-5 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                     <div class="relative h-64 overflow-hidden sm:h-80 lg:order-last lg:h-full rounded-[35px] bg-myst">
-                        <img alt="Party" src="images/index_v2/logo-njp-animated-2.gif"
+                        <img alt="Party" src="/images/index_v2/logo-njp-animated-2.gif"
                             class="absolute inset-0 h-full w-full object-contain" />
                     </div>
 

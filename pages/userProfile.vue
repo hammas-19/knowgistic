@@ -66,7 +66,7 @@ definePageMeta({
                     <div class="border-r-[3px] border-[#b6b4b4] border-dashed py-5 h-full">
                     <!-- Notification Icon  -->
                     <span class="top-1 right-2 absolute cursor-pointer ">
-                        <img src="images/index_v2/icons/notification.png"
+                        <img src="/images/index_v2/icons/notification.png"
                             class="h-6 w-6 hover:h-8 hover:w-8 transition-all" alt="notifictaions">
                     </span>
 
@@ -76,7 +76,7 @@ definePageMeta({
                         <div class="flex justify-between mx-auto md:py-4 py-1 flex-col items-center md:gap-5 gap-3">
                             <span
                                 class="rounded-full md:h-24 h-20 md:w-24 w-20 border-[3px] border-astronaut border-dashed text-center flex justify-center items-center">
-                                <img src="images/index_v2/icons/user-profile.png" class="h-8 w-8" alt="displayPicture">
+                                <img src="/images/index_v2/icons/user-profile.png" class="h-8 w-8" alt="displayPicture">
                             </span>
                             <span class="text-astronaut md:text-2xl text-lg font-semibold text-center">
                                 Hammas Masood
@@ -101,7 +101,7 @@ definePageMeta({
                             <span class="md:h-28 h-10 w-[1px] border-l-[3px] border-[#b6b4b4] border-dashed mx-auto">
                                 <!-- just line -->
                             </span>
-                            <img src="images/index_v2/walkingman.gif" class="rounded-[30px] max-h-[260px]" alt="manwalking">
+                            <img src="/images/index_v2/walkingman.gif" class="rounded-[30px] max-h-[260px]" alt="manwalking">
                         </div>
 
                     </ul>
@@ -135,7 +135,7 @@ definePageMeta({
 
                                             <!-- Notification Icon  -->
                     <span class="top-1 right-1 absolute cursor-pointer ">
-                        <img src="images/index_v2/icons/notification.png"
+                        <img src="/images/index_v2/icons/notification.png"
                             class="h-6 w-6 hover:h-8 hover:w-8 transition-all" alt="notifictaions">
                     </span>
 
@@ -146,7 +146,7 @@ definePageMeta({
                         <div class="flex justify-between mx-auto py-4 flex-col items-center gap-5">
                             <span
                                 class="rounded-full h-24 w-24 border-[3px] border-astronaut border-dashed text-center flex justify-center items-center">
-                                <img src="images/index_v2/icons/user-profile.png" class="h-8 w-8" alt="displayPicture">
+                                <img src="/images/index_v2/icons/user-profile.png" class="h-8 w-8" alt="displayPicture">
                             </span>
                             <span class="text-astronaut md:text-2xl text-xl font-semibold text-center">
                                 Hammas Masood
@@ -171,7 +171,7 @@ definePageMeta({
                             <span class="h-28 w-[1px] border-l-[3px] border-[#b6b4b4] border-dashed mx-auto">
                                 <!-- just line -->
                             </span>
-                            <img src="images/index_v2/walkingman.gif" class="rounded-[30px] " alt="manwalking">
+                            <img src="/images/index_v2/walkingman.gif" class="rounded-[30px] " alt="manwalking">
                         </div>
 
                     </ul>

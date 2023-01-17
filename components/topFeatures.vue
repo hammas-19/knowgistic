@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <img src="images/index_v2/video-feature-1-unscreen.gif" alt="TopFeature1">
+                <img src="/images/index_v2/video-feature-1-unscreen.gif" alt="TopFeature1">
 
             </div>
 
@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <img src="images/index_v2/video-feature-2-unscreen.gif" alt="TopFeature1">
+                <img src="/images/index_v2/video-feature-2-unscreen.gif" alt="TopFeature1">
 
             </div>
 
@@ -94,7 +94,7 @@
                     </div>
                 </div>
 
-                <img src="images/index_v2/video-feature-3-unscreen.gif" alt="TopFeature1">
+                <img src="/images/index_v2/video-feature-3-unscreen.gif" alt="TopFeature1">
 
             </div>
 
@@ -124,7 +124,7 @@
                     </div>
                 </div>
 
-                <img src="images/index_v2/video-feature-4-unscreen.gif" alt="TopFeature1">
+                <img src="/images/index_v2/video-feature-4-unscreen.gif" alt="TopFeature1">
 
             </div>
         </section>
