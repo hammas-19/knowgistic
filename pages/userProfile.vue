@@ -7,6 +7,8 @@ export default {
             showList: window.innerWidth > 768,
             tabs: ['Dashboard', 'tab1', 'tab2', 'tab3'],
             showProfile: true,
+            date: new Date().toString()
+
         }
     }
 }
@@ -22,9 +24,11 @@ definePageMeta({
     height: -moz-calc(100vh - 60px);
     height: calc(100vh - 60px);
 }
-.content{
+
+.content {
     direction: rtl;
 }
+
 .content::-webkit-scrollbar-track {
     background-color: #b6b4b4;
 
@@ -57,127 +61,117 @@ definePageMeta({
             </button>
 
             <div
-                class="main bg-[#d0cece] flex container mx-auto my-10 relative rounded-[20px] md:rounded-[30px] border-[3px] border-astronaut border-dashed overflow-hidden">
+                class="main bg-[#d0cece] flex container mx-auto my-6 relative rounded-[15px] md:rounded-[30px] border-[3px] border-astronaut border-dashed overflow-hidden">
 
 
 
                 <!-- Tabs vertical -->
-                <div class="tabs text-astronaut bg-mercury relative rounded-l-[30px] ">
-                    <div class="border-r-[3px] border-[#b6b4b4] border-dashed py-5 h-full">
-                    <!-- Notification Icon  -->
-                    <span class="top-1 right-2 absolute cursor-pointer ">
-                        <img src="/images/index_v2/icons/notification.png"
-                            class="h-6 w-6 hover:h-8 hover:w-8 transition-all" alt="notifictaions">
-                    </span>
+                <div v-if="showList" :class="{ 'md:min-w-[240px] min-w-[140px]': showList === true }"
+                    class="tabs text-astronaut bg-[#cfcdcd] relative rounded-l-[30px] md:max-w-[240px] max-w-[140px]">
 
-                    <ul v-if="showList" class="nav-tabs text-left md:gap-8 gap-3 flex flex-col md:min-w-[240px] min-w-[140px]">
+                    <!-- wrapper -->
+                    <div class="border-r-[3px] border-[#b6b4b4] border-dashed h-full">
+                        <!-- Notification Icon  -->
+                        <span class="top-1 right-2 absolute cursor-pointer ">
+                            <img src="/images/index_v2/icons/notification.png"
+                                class="h-6 w-6 hover:h-8 hover:w-8 transition-all" alt="notifictaions">
+                        </span>
 
-                        <!-- Dp & Name -->
-                        <div class="flex justify-between mx-auto md:py-4 py-1 flex-col items-center md:gap-5 gap-3">
-                            <span
-                                class="rounded-full md:h-24 h-20 md:w-24 w-20 border-[3px] border-astronaut border-dashed text-center flex justify-center items-center">
-                                <img src="/images/index_v2/icons/user-profile.png" class="h-8 w-8" alt="displayPicture">
-                            </span>
-                            <span class="text-astronaut md:text-2xl text-lg font-semibold text-center">
-                                Hammas Masood
-                            </span>
+                        <ul
+                            class="nav-tabs text-left flex flex-col md:max-w-[240px] max-w-[140px] justify-between h-full gap-1">
 
-                        </div>
-                        <div class="">
-                            <li v-for="(tab, index) in tabs" :key="index"
-                                class="mx-10 md:my-5 my-1 px-5 text-center md:py-3 py-1 rounded-xl cursor-pointer"
-                                :class="{ 'border-[3px] border-[#FF8656] border-dashed text-[#FF8656] font-semibold': activeTab === tab }"
-                                @click="activeTab = tab">
-                                {{ tab }}
-                            </li>
-                        </div>
+                            <!-- Dp & Name -->
+                            <div
+                                class="flex justify-between mx-auto py-4 flex-col items-center md:gap-5 gap-2">
+                                <span
+                                    class="rounded-full md:h-24 h-20 md:w-24 w-20 border-[3px] border-astronaut border-dashed text-center flex justify-center items-center">
+                                    <img src="/images/index_v2/icons/user-profile.png" class="h-8 w-8"
+                                        alt="displayPicture">
+                                </span>
+                                <span class="text-astronaut md:text-xl text-lg font-semibold text-center">
+                                    Hammas Masood
+                                </span>
 
-                        <!-- Journey button -->
-                        <div class="absolute bottom-0 flex flex-col m-[2px] border-4 border-red-500">
-                            <div @click="showProfile = !showProfile"
-                                class="md:text-lg text-base text-center font-semibold py-3 px-5 flex justify-center items-center border-[3px] border-[#b6b4b4] border-dashed m-2 rounded-xl  hover:text-mercury hover:bg-astronaut transition-all">
-                                Resume Journey
                             </div>
-                            <span class="md:h-28 h-10 w-[1px] border-l-[3px] border-[#b6b4b4] border-dashed mx-auto">
-                                <!-- just line -->
-                            </span>
-                            <img src="/images/index_v2/walkingman.gif" class="rounded-[30px] max-h-[260px]" alt="manwalking">
-                        </div>
+                            <div class="">
+                                <li v-for="(tab, index) in tabs" :key="index"
+                                    class="md:mx-10 mx-3 md:my-1 md:px-5 px-2 text-center md:py-3 py-1 rounded-xl text-sm cursor-pointer"
+                                    :class="{ 'border-[3px] border-[#FF8656] border-dashed text-[#FF8656] font-semibold': activeTab === tab }"
+                                    @click="activeTab = tab">
+                                    {{ tab }}
+                                </li>
+                            </div>
 
-                    </ul>
+                            <!-- Journey button -->
+                            <div class="flex flex-col pb-2 max-h-[240px]">
+                                <div @click="showProfile = !showProfile"
+                                    class="md:text-lg text-sm text-center font-semibold md:py-3 py-1 md:px-5 px-2 flex justify-center items-center border-[3px] border-mercury border-dashed m-2 rounded-xl  hover:text-mercury hover:bg-astronaut transition-all">
+                                    Resume Journey
+                                </div>
+                                <span
+                                    class="h-10 w-[1px] border-l-[3px] border-mercury border-dashed mx-auto">
+                                    <!-- just line -->
+                                </span>
+                                <span class="max-w-[160px] mx-auto">
+                                    <img src="/images/index_v2/walkingman.gif" class="rounded-[15px] object-center"
+                                    alt="manwalking">
+                                </span>
+                            </div>
+
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Contents -->
-                <div
-                    class=" bg-mercury md:p-5 p-1 rounded-[30px] rounded-l-none w-full">
-                    
-                    <div class="content h-full overflow-auto">
+                <div :class="{'rounded-[30px]' : showList & showProfile === false}" 
+                    class="bg-mercury md:p-5 p-1 w-full rounded-l-none">
 
-                    <div v-show="activeTab === 'tab1'" class="flex flex-wrap justify-center">
-                        <ShowCard />
-                    </div>
-                    <div v-show="activeTab === 'tab2'">
-                        <Govtob />
-                    </div>
-                    <div v-show="activeTab === 'tab3'">
-                        <stats />
-                    </div>
+                    <div :class="{ 'opacity-30 ': showList | showProfile === true }"
+                        class="content h-full overflow-auto">
+
+                        <div v-show="activeTab === 'tab1'" class="flex flex-wrap justify-center">
+                            <ShowCard />
+                        </div>
+                        <div v-show="activeTab === 'tab2'" class="flex flex-wrap justify-center">
+                            <Govtob />
+                        </div>
+                        <div v-show="activeTab === 'tab3'" class="flex flex-wrap justify-center">
+                            <stats />
+                        </div>
                     </div>
 
                 </div>
 
 
                 <!-- Profile Tab -->
-                <div class="tabs text-astronaut bg-[#d0cece] relative rounded-r-[30px]">
-                    
-                    <div  v-if="showProfile" class="md:min-w-[340px] min-w-[240px] p-4">
+                <div class="tabs text-astronaut bg-mercury relative rounded-r-[30px]">
 
-                                            <!-- Notification Icon  -->
-                    <span class="top-1 right-1 absolute cursor-pointer ">
-                        <img src="/images/index_v2/icons/notification.png"
-                            class="h-6 w-6 hover:h-8 hover:w-8 transition-all" alt="notifictaions">
-                    </span>
+                    <!-- Profile Main -->
+                    <div v-if="showProfile" class="md:min-w-[340px] min-w-[260px] md:py-2 py-1 h-full">
 
-                    <ul
-                        class="nav-tabs text-left gap-8 flex flex-col ">
+                    <!-- wrapper -->
+                        <div class="border-l-[3px] border-[#b6b4b4] border-dashed h-full flex flex-col items-center px-2 justify-between">
+                            <div v-for="items in 2" class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-2xl p-2 w-full bg-[#ecebeb] shadow-xl">
 
-                        <!-- Dp & Name -->
-                        <div class="flex justify-between mx-auto py-4 flex-col items-center gap-5">
-                            <span
-                                class="rounded-full h-24 w-24 border-[3px] border-astronaut border-dashed text-center flex justify-center items-center">
-                                <img src="/images/index_v2/icons/user-profile.png" class="h-8 w-8" alt="displayPicture">
-                            </span>
-                            <span class="text-astronaut md:text-2xl text-xl font-semibold text-center">
-                                Hammas Masood
-                            </span>
+                                <div class="flex justify-between w-full items-center">
+                                <h1 class="md:text-xl text-base md:font-normal font-semibold">Presence</h1>
+                                <span class="text-xs">View all</span>
+                                </div>
 
-                        </div>
-                        <div class="">
-                            <li v-for="(tab, index) in tabs" :key="index"
-                                class="mx-10 my-5 px-5 text-center py-3 rounded-xl cursor-pointer"
-                                :class="{ 'border-[3px] border-[#FF8656] border-dashed text-[#FF8656] font-semibold': activeTab === tab }"
-                                @click="activeTab = tab">
-                                {{ tab }}
-                            </li>
-                        </div>
+                                <div class="grid grid-cols-7 grid-rows-5 w-full">
+                                    <span v-for="items in 30" :class="{'text-nectarine' : items % 0.75}"
+                                            class="flex flex-col items-center text-xs hover:shadow-md rounded-md transition-all">
+                                        <span>
+                                        {{ items}}
+                                       </span>
+                                        <img src="/images/index_v2/icons/medal.svg" class="md:w-10 w-8 md:h-10 h-8" alt=""> 
+                                    </span>
+                                </div>
 
-
-                        <div class="absolute bottom-0 flex flex-col m-[2px]">
-                            <div
-                                class="md:text-lg text-base text-center font-semibold py-3 px-5 flex justify-center items-center border-[3px] border-[#b6b4b4] border-dashed m-2 rounded-xl  hover:text-mercury hover:bg-astronaut transition-all">
-                                Resume Journey
                             </div>
-                            <span class="h-28 w-[1px] border-l-[3px] border-[#b6b4b4] border-dashed mx-auto">
-                                <!-- just line -->
-                            </span>
-                            <img src="/images/index_v2/walkingman.gif" class="rounded-[30px] " alt="manwalking">
                         </div>
-
-                    </ul>
 
                     </div>
-
 
                 </div>
 
