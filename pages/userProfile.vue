@@ -4,8 +4,8 @@ export default {
     data() {
         return {
             activeTab: 'Dashboard',
-            showList: window.innerWidth > 768,
-            tabs: ['Dashboard', 'tab1', 'tab2', 'tab3'],
+            showList: false,
+            tabs: ['Dashboard', 'Courses', 'tab1', 'tab2', 'tab3'],
             showProfile: true,
             date: new Date().toString()
 
@@ -23,10 +23,6 @@ definePageMeta({
     height: -webkit-calc(100vh - 60px);
     height: -moz-calc(100vh - 60px);
     height: calc(100vh - 60px);
-}
-
-.content {
-    direction: rtl;
 }
 
 .content::-webkit-scrollbar-track {
@@ -60,6 +56,7 @@ definePageMeta({
                 Show/Hide
             </button>
 
+            <!-- Main -->
             <div
                 class="main bg-[#d0cece] flex container mx-auto my-6 relative rounded-[15px] md:rounded-[30px] border-[3px] border-astronaut border-dashed overflow-hidden">
 
@@ -67,7 +64,7 @@ definePageMeta({
 
                 <!-- Tabs vertical -->
                 <div v-if="showList" :class="{ 'md:min-w-[240px] min-w-[140px]': showList === true }"
-                    class="tabs text-astronaut bg-[#cfcdcd] relative rounded-l-[30px] md:max-w-[240px] max-w-[140px]">
+                    class="tabs text-astronaut bg-[#cfcdcd] relative rounded-l-[30px] md:max-w-[240px] max-w-[140px] transition-all duration-1000 delay-1000">
 
                     <!-- wrapper -->
                     <div class="border-r-[3px] border-[#b6b4b4] border-dashed h-full">
@@ -81,8 +78,7 @@ definePageMeta({
                             class="nav-tabs text-left flex flex-col md:max-w-[240px] max-w-[140px] justify-between h-full gap-1">
 
                             <!-- Dp & Name -->
-                            <div
-                                class="flex justify-between mx-auto py-4 flex-col items-center md:gap-5 gap-2">
+                            <div class="flex justify-between mx-auto py-4 flex-col items-center md:gap-5 gap-2">
                                 <span
                                     class="rounded-full md:h-24 h-20 md:w-24 w-20 border-[3px] border-astronaut border-dashed text-center flex justify-center items-center">
                                     <img src="/images/index_v2/icons/user-profile.png" class="h-8 w-8"
@@ -108,13 +104,12 @@ definePageMeta({
                                     class="md:text-lg text-sm text-center font-semibold md:py-3 py-1 md:px-5 px-2 flex justify-center items-center border-[3px] border-mercury border-dashed m-2 rounded-xl  hover:text-mercury hover:bg-astronaut transition-all">
                                     Resume Journey
                                 </div>
-                                <span
-                                    class="h-10 w-[1px] border-l-[3px] border-mercury border-dashed mx-auto">
+                                <span class="h-10 w-[1px] border-l-[3px] border-mercury border-dashed mx-auto">
                                     <!-- just line -->
                                 </span>
                                 <span class="max-w-[160px] mx-auto">
                                     <img src="/images/index_v2/walkingman.gif" class="rounded-[15px] object-center"
-                                    alt="manwalking">
+                                        alt="manwalking">
                                 </span>
                             </div>
 
@@ -123,12 +118,27 @@ definePageMeta({
                 </div>
 
                 <!-- Contents -->
-                <div :class="{'rounded-[30px]' : showList & showProfile === false}" 
+                <div :class="{ 'rounded-[30px]': showList & showProfile === false }"
                     class="bg-mercury md:p-5 p-1 w-full rounded-l-none">
 
                     <div :class="{ 'opacity-30 ': showList | showProfile === true }"
                         class="content h-full overflow-auto">
+                        <div v-show="activeTab === 'Dashboard'" class="flex flex-wrap justify-center relative">
 
+                            <!-- heading = Dashboard -->
+                            <h1 class="absolute left-2 top-2 text-astronaut md:text-xl text-sm font-medium">Dashboard
+                            </h1>
+
+                        </div>
+                        <div v-show="activeTab === 'Courses'" class=" relative">
+
+                            <!-- heading = My courses -->
+                            <h1 class="absolute left-2 top-2 text-astronaut md:text-xl text-sm font-medium">My Courses
+                            </h1>
+
+                            <UserProfileCourses />
+
+                        </div>
                         <div v-show="activeTab === 'tab1'" class="flex flex-wrap justify-center">
                             <ShowCard />
                         </div>
@@ -149,26 +159,37 @@ definePageMeta({
                     <!-- Profile Main -->
                     <div v-if="showProfile" class="md:min-w-[340px] min-w-[260px] md:py-2 py-1 h-full">
 
-                    <!-- wrapper -->
-                        <div class="border-l-[3px] border-[#b6b4b4] border-dashed h-full flex flex-col items-center px-2 justify-between">
-                            <div v-for="items in 2" class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-2xl p-2 w-full bg-[#ecebeb] shadow-xl">
+                        <!-- wrapper -->
+                        <div
+                            class="border-l-[3px] border-[#b6b4b4] border-dashed h-full flex flex-col items-center px-2 justify-between">
+
+                            <!-- calender -->
+                            <div
+                                class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-2xl p-2 w-full bg-[#ecebeb] shadow-xl">
 
                                 <div class="flex justify-between w-full items-center">
-                                <h1 class="md:text-xl text-base md:font-normal font-semibold">Presence</h1>
-                                <span class="text-xs">View all</span>
+                                    <h1 class="md:text-xl text-base md:font-normal font-semibold">Presence</h1>
+                                    <span class="text-xs">View all</span>
                                 </div>
 
                                 <div class="grid grid-cols-7 grid-rows-5 w-full">
-                                    <span v-for="items in 30" :class="{'text-nectarine' : items % 0.75}"
-                                            class="flex flex-col items-center text-xs hover:shadow-md rounded-md transition-all">
+                                    <span v-for="items in 30" :class="{ 'text-nectarine': items % 0.75 }"
+                                        class="flex flex-col items-center text-xs hover:shadow-md rounded-md transition-all">
                                         <span>
-                                        {{ items}}
-                                       </span>
-                                        <img src="/images/index_v2/icons/medal.svg" class="md:w-10 w-8 md:h-10 h-8" alt=""> 
+                                            {{ items }}
+                                        </span>
+                                        <img src="/images/index_v2/icons/medal.svg" class="md:w-10 w-8 md:h-10 h-8"
+                                            alt="">
                                     </span>
                                 </div>
 
                             </div>
+
+                            <!-- Badge -->
+                            <div class="flex flex-col gap-2">
+                                <UserProfileBadge v-for="items in 3" :class="{ 'bg-blue-200': items === 2 }" />
+                            </div>
+
                         </div>
 
                     </div>
