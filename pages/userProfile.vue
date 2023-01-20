@@ -58,13 +58,13 @@ definePageMeta({
 
             <!-- Main -->
             <div
-                class="main bg-[#d0cece] flex container mx-auto my-6 relative rounded-[15px] md:rounded-[30px] border-[3px] border-astronaut border-dashed overflow-hidden">
+                class="main bg-alabaster flex container mx-auto my-6 relative rounded-[15px] md:rounded-[30px] border-[3px] border-astronaut border-dashed overflow-hidden">
 
 
 
                 <!-- Tabs vertical -->
-                <div v-if="showList" :class="{ 'md:min-w-[240px] min-w-[140px]': showList === true }"
-                    class="tabs text-astronaut bg-[#cfcdcd] relative rounded-l-[30px] md:max-w-[240px] max-w-[140px] transition-all duration-1000 delay-1000">
+                <div v-if="showList" :class="{ 'md:min-w-[240px] min-w-[140px] block': showList === true }" 
+                    class="tabs text-astronaut bg-blueChalk relative rounded-l-[30px] md:max-w-[240px] max-w-[140px] transition-all duration-1000 delay-1000">
 
                     <!-- wrapper -->
                     <div class="border-r-[3px] border-[#b6b4b4] border-dashed h-full">
@@ -119,9 +119,9 @@ definePageMeta({
 
                 <!-- Contents -->
                 <div :class="{ 'rounded-[30px]': showList & showProfile === false }"
-                    class="bg-mercury md:p-5 p-1 w-full rounded-l-none">
+                    class="bg-white md:p-5 p-1 w-full rounded-l-none">
 
-                    <div :class="{ 'opacity-30 ': showList | showProfile === true }"
+                    <div :class="[{ 'opacity-30': showList === true },{ 'md:block hidden': showProfile === true }]"
                         class="content h-full overflow-auto">
                         <div v-show="activeTab === 'Dashboard'" class="flex flex-wrap justify-center relative">
 
@@ -154,10 +154,10 @@ definePageMeta({
 
 
                 <!-- Profile Tab -->
-                <div class="tabs text-astronaut bg-mercury relative rounded-r-[30px]">
+                <div class="tabs text-astronaut bg-alabaster relative rounded-r-[30px]">
 
                     <!-- Profile Main -->
-                    <div v-if="showProfile" class="md:min-w-[340px] min-w-[260px] md:py-2 py-1 h-full">
+                    <div v-if="showProfile" class="md:min-w-[340px] min-w-[260px] md:py-2 py-1 h-full" :class="{'block' : showProfile === true}">
 
                         <!-- wrapper -->
                         <div
@@ -165,7 +165,7 @@ definePageMeta({
 
                             <!-- calender -->
                             <div
-                                class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-2xl p-2 w-full bg-[#ecebeb] shadow-xl">
+                                class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-2xl p-2 w-full bg-blueChalk shadow-xl">
 
                                 <div class="flex justify-between w-full items-center">
                                     <h1 class="md:text-xl text-base md:font-normal font-semibold">Presence</h1>

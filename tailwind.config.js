@@ -15,6 +15,15 @@ module.exports = {
 				greatVibes: ['Great Vibes', 'cursive']
 			},
 			colors: {
+				// purple theme
+				trueV:"#8a70d6",
+				blueChalk: "#e9e3ff",
+				tundora: "#424040",
+				alabaster: "#fbfbfb",
+
+
+
+
 				mercury:"#e6e6e6",
 				myst:"#e7ecef",
 				astronaut:"#274c77",

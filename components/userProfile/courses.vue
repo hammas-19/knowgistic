@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="bg-myst border-4 border-emerald-400">
+        <section class="">
             <div class="container mx-auto py-12 md:py-24">
                 <div class="flex border border-gray-500 md:justify-center justify-evenly gap-8 py-10">
                     <button v-for="tab in tabs" :key="tab"
@@ -11,8 +11,8 @@
                     </button>
                 </div>
                 <div class="py-4">
-                    <span v-if="currentTab === 'Tab 1'">
-<ShowCard />
+                    <span v-if="currentTab === 'Tab 1'" class="flex flex-col md:flex-row justify-center gap-4 items-center flex-wrap">
+                        <UserProfileCourseCard  />
 
                     </span>
                     <p v-if="currentTab === 'Tab 2'">Content for Tab 2</p>
@@ -31,4 +31,62 @@ export default {
         }
     }
 }
+const courseData = [
+    {
+        image: 'images/index_v2/gk.png',
+        from: 'General Knowledge',
+        level: '1'
+    },
+    {
+        image: 'images/index_v2/analytics.png',
+        from: 'Analytical Problems',
+        level: '1'
+
+    },
+    {
+        image: 'images/index_v2/ca.png',
+        from: 'Current Affairs',
+        level: '2'
+    },
+    {
+        image: 'images/index_v2/cs.png',
+        from: 'Computer Studies',
+        level: '2'
+    },
+    {
+        image: 'images/index_v2/eng.png',
+        from: 'English',
+        level: '3'
+    },
+    {
+        image: 'images/index_v2/isl.png',
+        from: 'Islamic Studies',
+        level: '3'
+    },
+    {
+        image: 'images/index_v2/maths.png',
+        from: 'Maths',
+        level: '3'
+    },
+    {
+        image: 'images/index_v2/pro.png',
+        from: 'Professionalism',
+        level: '3'
+    },
+    {
+        image: 'images/index_v2/sci.png',
+        from: 'General Science',
+        level: '3'
+    },
+    {
+        image: 'images/index_v2/sindhi.png',
+        from: 'Sindhi',
+        level: '3'
+    },
+    {
+        image: 'images/index_v2/urdu.png',
+        from: 'Urdu',
+        level: '3'
+    },
+]   
 </script>
