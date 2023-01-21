@@ -1,11 +1,11 @@
 <template>
     <div>
         <section class="">
-            <div class="container mx-auto py-12 md:py-24">
-                <div class="flex border border-gray-500 md:justify-center justify-evenly gap-8 py-10">
+            <div class="container mx-auto ">
+                <div class="flex border-b-[3px] border-blueChalk border-dashed md:justify-center justify-evenly gap-8 pb-5 sticky">
                     <button v-for="tab in tabs" :key="tab"
-                        class="text-shark md:px-10 px-4 py-2 font-semibold uppercase rounded-2xl bg-astronaut"
-                        :class="{ 'bg-[#F5FAF8] text-nectarine border-dashed border-4 border-nectarine': currentTab === tab }"
+                        class="text-blueChalk md:px-10 px-4 py-2 font-semibold uppercase rounded-2xl bg-gulfBlue"
+                        :class="{ 'bg-amaranth text-blueChalk border-dashed border-4 border-gulfBlue': currentTab === tab }"
                         @click="currentTab = tab">
                         {{ tab }}
                     </button>

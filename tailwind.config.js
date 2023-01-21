@@ -15,9 +15,21 @@ module.exports = {
 				greatVibes: ['Great Vibes', 'cursive']
 			},
 			colors: {
+				// dynamic theme
+				gulfBlue:"#080f58",
+				jacksonsPurple: "#32289b",
+				cornflowerBlue:"#7d67ec",
+				blueChalk: "#e9e3ff",
+				amaranth:"#ec336b",
+				mercury:"#e6e6e6",
+
+				// text dark
+				mineShaft: "#303030",
+				// text light
+				osloGrey: "#8D9094",
+				
 				// purple theme
 				trueV:"#8a70d6",
-				blueChalk: "#e9e3ff",
 				tundora: "#424040",
 				alabaster: "#fbfbfb",
 
@@ -28,14 +40,12 @@ module.exports = {
 				myst:"#e7ecef",
 				astronaut:"#274c77",
         			nectarine: "#FF8656",
-				mineShaft: "#303030",
 
 				myst: "#F5FAF8",
 				teaGreen: "#c5efca",
 				concrete: "#f3f3f3",
 				shark: "#1d1e1e",
         			pharlap: "pharlap",
-				osloGrey: "#8D9094",
 
 				// Dark mode colors
 				skyBLue: "#007AFF",
@@ -44,8 +54,8 @@ module.exports = {
 				nileBlue: "#183555",
 			},
 			backgroundImage: {
-				"progress-course":
-					"linear-gradient(111.32deg, #2D6FBC 1.22%, #255691 99.2%)",
+				"courseCard-bg":
+					"linear-gradient(to right,#e9e3ff 5%, #080f58 80%, #080f58 15% )",
 				"dark-progress-course":
 					"radial-gradient(68.92% 87.17% at 31.18% 53.61%, #007AFF 0%, #004B9D 100%) ",
 				"course-detail-heroic-gradient":
