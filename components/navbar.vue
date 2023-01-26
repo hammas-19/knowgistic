@@ -1,5 +1,5 @@
 <template>
-    <nav class="relative dark:bg-cyanBlue bg-myst px-6 py-2">
+    <nav class="relative dark:bg-cyanBlue bg-selago px-6 py-6">
         <div class="lg:flex lg:items-center lg:justify-between lg:container lg:mx-auto mx-0">
             <div class="flex items-center justify-between">
                 <!-- Mobile menu -->
@@ -25,8 +25,7 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpenBurgerMenu ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'"
                 class="absolute inset-x-0 justify-center z-20 w-full grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 lg:bg-transparent lg:dark:bg-transparent bg-myst dark:bg-cyanBlue lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-                <div
-                    class="flex flex-col lg:gap-6 gap-2 md:flex-row lg:items-center lg:mx-8 justify-between border w-full">
+                <div class="flex flex-col lg:gap-6 gap-2 md:flex-row lg:items-center lg:mx-8 justify-between w-full">
                     <img src="/Logo.svg" class="shadow-" alt="">
 
                     <span>
@@ -55,6 +54,10 @@ const NavbarLink = [
     {
         name: "home",
         href: "/",
+    },
+    {
+        name: "New-home",
+        href: "/home",
     },
     {
         name: "courses",

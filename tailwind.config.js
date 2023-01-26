@@ -12,18 +12,23 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				greatVibes: ['Great Vibes', 'cursive']
+				greatVibes: ['Great Vibes', 'cursive'],
+				jost: ['Jost', 'sans-serif'],
+				handlee:['Handlee', 'cursive']
 			},
 			colors: {
 				// dynamic theme
 
+				// text
+				ebonyClay:"#28293D",				
+				comet:"#555770",				
+
 				// Purples
 				purplHeart:"#5F30E2",
-				midHeart:"background: linear-gradient(128.41deg, #5F30E2 37.18%, #8F6EEB 102.85%), #5F30E2;",
-				selago: "#FBFAFE",
+				selago: "#c9ddf7",
+				// selago: "#FBFAFE",
 
 				// Greens
-				salad:"background: linear-gradient(115.29deg, #4EAF51 7.49%, #A0D4A1 109.73%);",
 				moss: "#A0D4A1",
 				
 
@@ -58,6 +63,13 @@ module.exports = {
 				nileBlue: "#183555",
 			},
 			backgroundImage: {
+				// PURPPLE
+				"midHeart": "linear-gradient(128.41deg, #5F30E2 37.18%, #8F6EEB 102.85%)",
+				// green
+				"salad": "linear-gradient(115.29deg, #4EAF51 7.49%, #A0D4A1 109.73%)",
+				
+
+
 				"courseCard-bg":
 					"linear-gradient(to right,#e9e3ff 5%, #080f58 80%, #080f58 15% )",
 				"dark-progress-course":
