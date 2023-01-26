@@ -16,12 +16,16 @@ module.exports = {
 			},
 			colors: {
 				// dynamic theme
-				gulfBlue:"#080f58",
-				jacksonsPurple: "#32289b",
-				cornflowerBlue:"#7d67ec",
-				blueChalk: "#e9e3ff",
-				amaranth:"#ec336b",
-				mercury:"#e6e6e6",
+
+				// Purples
+				purplHeart:"#5F30E2",
+				midHeart:"background: linear-gradient(128.41deg, #5F30E2 37.18%, #8F6EEB 102.85%), #5F30E2;",
+				selago: "#FBFAFE",
+
+				// Greens
+				salad:"background: linear-gradient(115.29deg, #4EAF51 7.49%, #A0D4A1 109.73%);",
+				moss: "#A0D4A1",
+				
 
 				// text dark
 				mineShaft: "#303030",
