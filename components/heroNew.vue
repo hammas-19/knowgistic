@@ -37,19 +37,19 @@
 }
 </style>
 <template>
-    <div class="bg-selago pt-28 pb-80 relative w-full flex justify-center">
+    <div class="bg-selago md:pt-28 pt-2 pb-80 relative w-full flex justify-center">
 
         <div class="max-w-[475px] flex flex-col gap-5 text-center items-center">
 
 
-            <h1 class="font-bold text-4xl text-ebonyClay flex gap-4 items-end">Prepare
+            <h1 class="font-bold md:text-4xl text-2xl text-ebonyClay flex md:gap-4 gap-2 items-end">Prepare
 
                 <span class="flex flex-col items-center">
 
                     <div class="flex flex-col items-start">
 
                         <!-- correction -->
-                        <span class="correct text-4xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">smarter</span>
+                        <span class="correct md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Smarter</span>
                         <!-- arrow -->
                         <span class="arrow h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
                     </div>

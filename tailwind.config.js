@@ -17,6 +17,32 @@ module.exports = {
 				handlee:['Handlee', 'cursive']
 			},
 			colors: {
+				
+				// purple theme
+				trueV:"#8a70d6",
+				tundora: "#424040",
+				alabaster: "#fbfbfb",
+
+
+				mercury:"#e6e6e6",
+				myst:"#e7ecef",
+				astronaut:"#274c77",
+        			nectarine: "#FF8656",
+
+				myst: "#F5FAF8",
+				teaGreen: "#c5efca",
+				concrete: "#f3f3f3",
+				shark: "#1d1e1e",
+        			pharlap: "pharlap",
+
+				// Dark mode colors
+				skyBLue: "#007AFF",
+				cyanBlue: "#1D242C",
+				mirage: "#16191E",
+				nileBlue: "#183555",
+
+
+
 				// dynamic theme
 
 				// text
@@ -36,37 +62,14 @@ module.exports = {
 				mineShaft: "#303030",
 				// text light
 				osloGrey: "#8D9094",
-				
-				// purple theme
-				trueV:"#8a70d6",
-				tundora: "#424040",
-				alabaster: "#fbfbfb",
-
-
-
-
-				mercury:"#e6e6e6",
-				myst:"#e7ecef",
-				astronaut:"#274c77",
-        			nectarine: "#FF8656",
-
-				myst: "#F5FAF8",
-				teaGreen: "#c5efca",
-				concrete: "#f3f3f3",
-				shark: "#1d1e1e",
-        			pharlap: "pharlap",
-
-				// Dark mode colors
-				skyBLue: "#007AFF",
-				cyanBlue: "#1D242C",
-				mirage: "#16191E",
-				nileBlue: "#183555",
 			},
 			backgroundImage: {
 				// PURPPLE
 				"midHeart": "linear-gradient(128.41deg, #5F30E2 37.18%, #8F6EEB 102.85%)",
 				// green
 				"salad": "linear-gradient(115.29deg, #4EAF51 7.49%, #A0D4A1 109.73%)",
+				// fadeCard
+				"cardFade": "linear-gradient(0deg, rgba(243,241,252,0.9164040616246498) 21%, rgba(255,255,255,0) 95%)",
 				
 
 
