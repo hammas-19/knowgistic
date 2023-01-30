@@ -51,7 +51,7 @@ module.exports = {
 
 				// Purples
 				purplHeart:"#5F30E2",
-				selago: "#c9ddf7",
+				selago: "#FBFAFE",
 				// selago: "#FBFAFE",
 
 				// Greens

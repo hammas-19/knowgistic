@@ -12,7 +12,7 @@ progress[value]::-webkit-progress-bar {
 </style>
 <template>
     <div>
-        <div class="container mx-auto flex gap-16 px-10 bg-selago rounded-3xl h-[543px]">
+        <div class="container mx-auto flex gap-16 px-10 bg-selago rounded-3xl h-[543px] w-9/12">
 
             <div class="flex flex-col w-[270px] items-center justify-between gap-8 py-10">
                 <button v-for="tab in tabs" :key="tab"
@@ -30,14 +30,79 @@ progress[value]::-webkit-progress-bar {
                 </span>
 
             </div>
-            <div class="py-4">
-                <span v-if="currentTab === 'Tab 1'">
+            <div class="py-4 w-full ">
 
-                    content 1
+                <span v-if="currentTab === 'Tab 1'">
+                    <div class="flex h-full flex-row-reverse items-center justify-between">
+                        <span class="w-1/2">
+
+                            <div class="py-14 flex flex-col max-w-[402px] gap-3 text-center justify-center mx-auto">
+
+                                <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
+                                <span class="text-4xl font-bold text-ebonyClay">Lorem ipsum dolor sit ipsum dolor</span>
+                                <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
+                                    volutpat diam
+                                    quis.
+                            </span>
+
+                            </div>
+
+                        </span>
+                        <span class="h-full w-1/2">
+                            <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
+                        </span>
+                    </div>
 
                 </span>
-                <p v-if="currentTab === 'Tab 2'">Content for Tab 2</p>
-                <p v-if="currentTab === 'Tab 3'">Content for Tab 3</p>
+
+                <span v-if="currentTab === 'Tab 2'">
+
+                    <div class="flex h-full flex-row-reverse items-center justify-between">
+                        <span class="w-1/2">
+
+                            <div class="py-14 flex flex-col max-w-[402px] gap-3 text-center justify-center mx-auto">
+
+                                <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
+                                <span class="text-4xl font-bold text-ebonyClay">Lorem ipsum dolor sit ipsum dolor</span>
+                                <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
+                                    volutpat diam
+                                    quis.
+                                </span>
+
+                            </div>
+
+                        </span>
+                        <span class="h-full w-1/2">
+                            <img src="/walkingman-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
+                        </span>
+                    </div>
+
+                </span>
+
+                <span v-if="currentTab === 'Tab 3'">
+
+                    <div class="flex h-full flex-row-reverse items-center justify-between">
+                        <span class="w-1/2">
+
+                            <div class="py-14 flex flex-col max-w-[402px] gap-3 text-center justify-center mx-auto">
+
+                                <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
+                                <span class="text-4xl font-bold text-ebonyClay">Lorem ipsum dolor sit ipsum dolor</span>
+                                <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
+                                    volutpat diam
+                                    quis.
+                                </span>
+
+                            </div>
+
+                        </span>
+                        <span class="h-full w-1/2">
+                            <img src="/defaulters.jpg" class="w-full h-full rounded-3xl object-cover" alt="">
+                        </span>
+                    </div>
+
+                </span>
+
             </div>
         </div>
 
