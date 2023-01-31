@@ -1,7 +1,18 @@
+<script>
+export default {
+    data() {
+        return {
+            badge : true
+
+        }
+    }
+}
+</script>
+
 <template>
 
-    <div role="alert" class="rounded-xl md:p-4 p-[2px] shadow-xl bg-red-300">
-        <div class="flex items-start md:gap-4 gap-1">
+    <div v-if="badge" role="alert" class="rounded-xl md:p-4 p-[2px] shadow-xl bg-red-300">
+        <div class="flex items-start md:gap-4 gap-1 transition-all">
             <span class="text-green-600">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="md:h-6 h-4 md:w-6 w-4">
@@ -18,7 +29,7 @@
                 </p>
             </div>
 
-            <button class="text-gray-500 transition hover:text-gray-600">
+            <button @click="badge = false" class="text-gray-500 transition-all hover:text-gray-600">
                 <span class="sr-only">Dismiss popup</span>
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

@@ -76,11 +76,11 @@
             <img src="/images/hero/heroBottom.svg" class="w-full" alt="">
         </span>
         <!-- Right Img -->
-        <span class="absolute right-0 bottom-0">
+        <span class="absolute right-0 bottom-0 md:block hidden">
             <img src="/images/hero/heroRight.svg" class="" alt="">
         </span>
         <!-- Left Img -->
-        <span class="absolute left-0 bottom-44">
+        <span class="absolute left-0 bottom-44 md:block hidden">
             <img src="/images/hero/heroLeft.svg" class="" alt="">
         </span>
     </div>

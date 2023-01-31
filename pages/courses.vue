@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <section class="bg-[url('images/index_v2/Quizbg.png')] hero bg-center bg-no-repeat ">
+        <section class="bg-[url('/images/index_v2/Quizbg.png')] hero bg-center bg-no-repeat ">
             <div class="container mx-auto py-12 md:py-40">
                 <h1 class="md:text-6xl text-3xl text-shark text-center font-semibold md:px-10 px-0">
                     What would you like to learn today <span class="text-nectarine">?</span>
