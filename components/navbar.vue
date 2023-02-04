@@ -37,8 +37,8 @@
                     </span>
 
                     <div class="flex gap-5">
-                        <span
-                            class="px-4 py-2 text-center font-medium text-sm rounded-md text-purplHeart border border-purplHeart">Login</span>
+                        <NuxtLink to="/login"
+                            class="px-4 py-2 text-center font-medium text-sm rounded-md text-purplHeart border border-purplHeart cursor-pointer hover:bg-purplHeart hover:text-white transition-all">Login</NuxtLink>
                         <span
                             class="px-4 py-2 text-center font-medium text-sm rounded-md text-white bg-purplHeart">Signup</span>
                     </div>
@@ -65,7 +65,7 @@ const NavbarLink = [
     },
     {
         name: "profile",
-        href: "/userProfile",
+        href: "/profile/userProfile",
     },
 ];
 

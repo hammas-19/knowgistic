@@ -31,59 +31,59 @@ const props = defineProps({
 const courseData = [
 
     {
-        image: 'images/index_v2/gk.png',
+        image: '/images/index_v2/gk.png',
         from: 'General Knowledge',
         level: '1'
     },
     
     {
-        image: 'images/index_v2/analytics.png',
+        image: '/images/index_v2/analytics.png',
         from: 'Analytical Problems',
         level: '1'
 
     },
     {
-        image: 'images/index_v2/ca.png',
+        image: '/images/index_v2/ca.png',
         from: 'Current Affairs',
         level: '2'
     },
     {
-        image: 'images/index_v2/cs.png',
+        image: '/images/index_v2/cs.png',
         from: 'Computer Studies',
         level: '2'
     },
     {
-        image: 'images/index_v2/eng.png',
+        image: '/images/index_v2/eng.png',
         from: 'English',
         level: '3'
     },
     {
-        image: 'images/index_v2/isl.png',
+        image: '/images/index_v2/isl.png',
         from: 'Islamic Studies',
         level: '3'
     },
     {
-        image: 'images/index_v2/maths.png',
+        image: '/images/index_v2/maths.png',
         from: 'Maths',
         level: '3'
     },
     {
-        image: 'images/index_v2/pro.png',
+        image: '/images/index_v2/pro.png',
         from: 'Professionalism',
         level: '3'
     },
     {
-        image: 'images/index_v2/sci.png',
+        image: '/images/index_v2/sci.png',
         from: 'General Science',
         level: '3'
     },
     {
-        image: 'images/index_v2/sindhi.png',
+        image: '/images/index_v2/sindhi.png',
         from: 'Sindhi',
         level: '3'
     },
     {
-        image: 'images/index_v2/urdu.png',
+        image: '/images/index_v2/urdu.png',
         from: 'Urdu',
         level: '3'
     },

@@ -61,7 +61,7 @@ export default {
 
                 <!-- Tabs vertical -->
                 <div v-if="showList" :class="{ 'md:min-w-[240px] min-w-[140px] block': showList === true }"
-                    class="tabs text-mineShaft bg-blueChalk relative rounded-l-[30px] md:max-w-[240px] max-w-[140px] transition-all duration-1000 delay-1000">
+                    class="tabs text-mineShaft bg-selago relative rounded-l-[30px] md:max-w-[240px] max-w-[140px] transition-all duration-1000 delay-1000">
 
                     <!-- wrapper -->
                     <div class="border-r-[3px] border-blueChalk border-dashed h-full">

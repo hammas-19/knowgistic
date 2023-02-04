@@ -33,7 +33,7 @@ module.exports = {
 				teaGreen: "#c5efca",
 				concrete: "#f3f3f3",
 				shark: "#1d1e1e",
-        			pharlap: "pharlap",
+        			// pharlap: "pharlap",
 
 				// Dark mode colors
 				skyBLue: "#007AFF",
