@@ -165,10 +165,10 @@ progress[value]::-webkit-progress-bar {
 
                     <span v-if="currentTab === 'Tab 2'">
 
-                        <div class="flex h-full flex-row-reverse items-center justify-between">
-                            <span class="w-1/2">
+                        <div class="flex h-full flex-col-reverse items-center justify-between">
+                            <span class="w-full">
 
-                                <div class="py-14 flex flex-col max-w-[402px] gap-3 text-center justify-center mx-auto">
+                                <div class="py-3 flex flex-col max-w-[98%] gap-3 text-center justify-center mx-auto">
 
                                     <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
                                     <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
@@ -181,7 +181,7 @@ progress[value]::-webkit-progress-bar {
                                 </div>
 
                             </span>
-                            <span class="h-full w-1/2">
+                            <span class="h-full w-[98%]">
                                 <img src="/walkingman-unscreen.gif" class="w-full h-full rounded-3xl object-cover"
                                     alt="">
                             </span>
@@ -191,10 +191,10 @@ progress[value]::-webkit-progress-bar {
 
                     <span v-if="currentTab === 'Tab 3'">
 
-                        <div class="flex h-full flex-row-reverse items-center justify-between">
-                            <span class="w-1/2">
+                        <div class="flex h-full flex-col-reverse items-center justify-between">
+                            <span class="w-full">
 
-                                <div class="py-14 flex flex-col max-w-[402px] gap-3 text-center justify-center mx-auto">
+                                <div class="py-3 flex flex-col max-w-[98%] gap-3 text-center justify-center mx-auto">
 
                                     <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
                                     <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
@@ -207,7 +207,7 @@ progress[value]::-webkit-progress-bar {
                                 </div>
 
                             </span>
-                            <span class="h-full w-1/2">
+                            <span class="h-full w-[98%]">
                                 <img src="/defaulters.jpg" class="w-full h-full rounded-3xl object-cover" alt="">
                             </span>
                         </div>
