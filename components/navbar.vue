@@ -26,7 +26,7 @@
             <div :class="isOpenBurgerMenu ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'"
                 class="absolute inset-x-0 justify-center z-20 w-full grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 lg:bg-transparent lg:dark:bg-transparent bg-myst dark:bg-cyanBlue lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
                 <div class="flex flex-col lg:gap-6 gap-2 md:flex-row lg:items-center lg:mx-8 justify-between w-full">
-                    <img src="/Logo.svg" class="shadow-" alt="">
+                    <img src="/Logo.svg" class="" alt="">
 
                     <span>
                         <NuxtLink v-for="(navLink, index) in NavbarLink" :to="navLink.href" :key="index"
@@ -38,7 +38,8 @@
 
                     <div class="flex gap-5">
                         <NuxtLink to="/login"
-                            class="px-4 py-2 text-center font-medium text-sm rounded-md text-purplHeart border border-purplHeart cursor-pointer hover:bg-purplHeart hover:text-white transition-all">Login</NuxtLink>
+                            class="px-4 py-2 text-center font-medium text-sm rounded-md text-purplHeart border border-purplHeart cursor-pointer hover:bg-purplHeart hover:text-white transition-all">
+                            Login</NuxtLink>
                         <span
                             class="px-4 py-2 text-center font-medium text-sm rounded-md text-white bg-purplHeart">Signup</span>
                     </div>
@@ -66,6 +67,10 @@ const NavbarLink = [
     {
         name: "profile",
         href: "/profile/userProfile",
+    },
+    {
+        name: "Contact Us",
+        href: "/contactUs",
     },
 ];
 

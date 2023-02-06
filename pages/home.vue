@@ -8,9 +8,17 @@
             </div>
         </section>
 
+        <!-- Why Choose Us -->
+        <section>
+            <div>
+                <WhyUs />
+            </div>
+        </section>
+
+
         <!-- Feature -->
         <section>
-            <div class="pb-16">
+            <div class="py-16">
 
                 <!-- Typo/Info -->
                 <div class="pb-5 flex flex-col max-w-[402px] gap-3 text-center justify-center mx-auto">

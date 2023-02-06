@@ -1,9 +1,9 @@
 <template>
-    <footer class="bg-myst dark:bg-gray-900">
-        <div class="container px-6 py-8 mx-auto bg-astronaut rounded-t-3xl">
+    <footer class="bg-white">
+        <div class="container px-6 py-8 mx-auto bg-alabaster border-2 rounded-t-3xl">
             <div class="text-center">
                 <span class="flex justify-center">
-                    <img src="/images/index_v1/logo.png" class="w-40" alt="Logo">
+                    <img src="/Logo.svg" class="w-40" alt="Logo">
                 </span>
 
                 <div class="flex flex-wrap justify-center mt-5 -mx-4">
