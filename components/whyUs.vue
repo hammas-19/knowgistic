@@ -75,12 +75,14 @@
                     blog meggings
                     sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki
                     neutra, distillery gastropub pok pok ugh.</p>
-                <a class="text-blue-400 inline-flex items-center mt-4">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+                <NuxtLink to="/aboutUs.vue">
+                    <span class="text-purplHeart border-4 border-purplHeart py-2 px-4  border-dashed rounded-3xl inline-flex items-center mt-4 cursor-pointer">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </NuxtLink>
             </div>
             <div class="flex flex-col md:w-1/2 md:pl-12">
                 <h2 class="title-font font-semibold text-ebonyClay tracking-wider text-sm mb-3">CATEGORIES</h2>

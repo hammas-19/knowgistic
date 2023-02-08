@@ -72,6 +72,10 @@ const NavbarLink = [
         name: "Contact Us",
         href: "/contactUs",
     },
+    {
+        name: "About Us",
+        href: "/aboutUs",
+    },
 ];
 
 </script>
