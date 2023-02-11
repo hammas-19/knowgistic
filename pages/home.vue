@@ -15,6 +15,19 @@
             </div>
         </section>
 
+        <!-- Categories -->
+        <section>
+            <div class="py-16">
+
+                <HeadingText/>
+
+            </div>
+            <div class="py-16">
+
+                <Categories/>
+
+            </div>
+        </section>
 
         <!-- Feature -->
         <section>
