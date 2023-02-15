@@ -76,12 +76,12 @@
             <img src="/images/hero/heroBottom.svg" class="w-full" alt="">
         </span>
         <!-- Right Img -->
-        <span class="absolute right-0 bottom-0 md:block hidden">
-            <img src="/images/hero/heroRight.svg" class="" alt="">
-        </span>
+        <!-- <span class="absolute right-0 bottom-0 md:block hidden">
+            <img src="/banners/bannerImg.png" class="w-[400px]" alt="">
+        </span> -->
         <!-- Left Img -->
-        <span class="absolute left-0 bottom-44 md:block hidden">
-            <img src="/images/hero/heroLeft.svg" class="" alt="">
-        </span>
+        <!-- <span class="absolute left-0 bottom-44 md:block hidden">
+            <img src="/banners/bannerImg2.png" class="w-[400px]" alt="">
+        </span> -->
     </div>
 </template>

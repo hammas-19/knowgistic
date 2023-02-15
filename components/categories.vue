@@ -5,8 +5,7 @@
 </style>
 <template>
     <div>
-        <section
-            class="bg-selago  lg:container lg:px-0 px-9 mx-auto rounded-3xl">
+        <section class="bg-selago  lg:container lg:px-0 px-9 mx-auto rounded-3xl">
             <div class="container mx-auto ">
                 <div class="flex  md:justify-center justify-evenly md:gap-20 gap-5 py-5">
                     <!-- <button v-for="tab in tabs" :key="tab"
@@ -16,7 +15,7 @@
                         {{ tab }}
                     </button> -->
                     <button v-for="tab in tabs" :key="tab" @click="currentTab = tab"
-                        class="text-purplHeart border-b-4 border-purplHeart font-semibold md:text-base text-xs flex items-center justify-end  md:flex-row flex-col  md:gap-3 gap-0 opacity-30"
+                        class="text-ebonyClay border-b-4 border-purplHeart font-semibold md:text-base text-xs flex items-center justify-end  md:flex-row flex-col  md:gap-3 gap-0 opacity-30"
                         :class="[{ 'md:flex-row-reverse': tab == 'University entrance' }, { 'opacity-100': tab == currentTab }]">
 
 
@@ -30,7 +29,32 @@
                         </span>
                     </button>
                 </div>
-                <div class="Info py-4 overflow-scroll md:h-[calc(100vh-450px)] h-[calc(100vh-150px)]">
+                <div class="Info py-4 overflow-hidden md:h-[calc(100vh-550px)] h-[calc(100vh-200px)] relative">
+
+                    <!-- fading div -->
+                    <div
+                        class="absolute w-full h-20 md:h-36 bottom-0 bg-cardFade z-10 justify-center items-end flex py-8 rounded-b-3xl">
+
+                        <!-- Govt Jobs -->
+                        <NuxtLink v-show="currentTab === 'Govt Jobs'" to="/govtJobs">
+
+                            <span
+                                class="cursor-pointer bg-purplHeart px-14 py-5 font-semibold rounded-lg text-white">View
+                                All Govt Jobs</span>
+
+                        </NuxtLink>
+
+                        <!-- Uni Entrance Exams -->
+                        <NuxtLink v-show="currentTab === 'University entrance'" to="/uniExams">
+
+                            <span
+                                class="cursor-pointer bg-purplHeart px-14 py-5 font-semibold rounded-lg text-white">View
+                                All Uni Entrance exams</span>
+
+                        </NuxtLink>
+
+                    </div>
+
                     <span v-if="currentTab === 'Govt Jobs'"
                         class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
 
