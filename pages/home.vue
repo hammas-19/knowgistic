@@ -62,15 +62,8 @@
         <!-- Testimonials -->
         <section class=" bg-selago relative">
 
-                    <!-- fading divs -->
-                    <div
-            class="absolute w-full h-24 top-0 rotate-180 z-20 bg-cardFade">
-        </div>
-        <div
-            class="absolute w-full h-24 bottom-0 z-20 bg-cardFade">
-        </div>
 
-            <Testimonials/>
+            <Testimonials />
 
         </section>
 
