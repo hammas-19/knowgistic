@@ -2,10 +2,9 @@
     <div>
 
         <!-- Hero -->
-        <section class="bg-selago relative">
-            <div class="flex justify-center">
-                <HeroNew />
-            </div>
+        <section class=" m:py-8 py-3">
+            
+                <Carousel />
         </section>
 
         <!-- Why Choose Us -->
@@ -17,7 +16,7 @@
 
         <!-- Categories -->
         <section>
-            <div class="py-16">
+            <div class="pt-16">
 
                 <HeadingText />
 

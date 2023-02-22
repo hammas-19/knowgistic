@@ -3,8 +3,11 @@
 
         <!-- Hero section -->
         <section>
-            <div class="text-concrete">
-                <Hero />
+            <div class="text-concrete py-24">
+                <!-- <Hero /> -->
+
+                <Carousel/>
+
             </div>
         </section>
 
