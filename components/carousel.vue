@@ -51,7 +51,7 @@
         <div class="max-w-[475px] flex flex-col gap-5 text-center items-center">
 
 
-          <h1 class="font-bold md:text-4xl text-2xl text-ebonyClay flex md:gap-4 gap-2 items-end">Prepare
+          <h1 class="font-bold md:text-4xl text-xl text-ebonyClay flex md:gap-4 gap-2 items-end">Prepare
 
             <span class="flex flex-col items-center">
 
@@ -97,7 +97,7 @@
         <div class="max-w-[500px] flex flex-col gap-5 text-center items-center">
 
 
-          <h1 class="font-bold md:text-4xl text-2xl text-ebonyClay flex gap-2 items-end">
+          <h1 class="font-bold md:text-4xl text-xl text-ebonyClay flex gap-2 items-end">
 
             <span class="flex flex-col items-center">
 
@@ -143,7 +143,7 @@
       <div class=" max-w-[600px] flex flex-col gap-5 text-center items-center">
 
 
-          <h1 class="font-bold md:text-4xl text-2xl text-ebonyClay flex md:gap-4 gap-2 items-end">Here, Exams are
+          <h1 class="font-bold md:text-4xl text-xl text-ebonyClay flex md:gap-4 gap-2 items-end">Here, Exams are
 
             <span class="flex flex-col items-center">
 

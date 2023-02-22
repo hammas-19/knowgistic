@@ -39,7 +39,7 @@
                         <NuxtLink v-show="currentTab === 'Govt Jobs'" to="/govtJobs">
 
                             <span
-                                class="cursor-pointer bg-purplHeart px-14 py-5 font-semibold rounded-lg text-white">View
+                                class="cursor-pointer bg-purplHeart md:px-14 px-8 md:py-5 py-2 font-semibold rounded-lg text-white text-sm md:text-lg">View
                                 All Govt Jobs</span>
 
                         </NuxtLink>
@@ -48,7 +48,7 @@
                         <NuxtLink v-show="currentTab === 'University entrance'" to="/uniExams">
 
                             <span
-                                class="cursor-pointer bg-purplHeart px-14 py-5 font-semibold rounded-lg text-white">View
+                                class="cursor-pointer bg-purplHeart md:px-14 px-4 md:py-5 py-2 font-semibold rounded-lg text-white text-sm md:text-lg">View
                                 All Uni Entrance exams</span>
 
                         </NuxtLink>
