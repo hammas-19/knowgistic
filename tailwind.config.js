@@ -30,6 +30,8 @@ module.exports = {
 				// Purples
 				purplHeart:
 					"#5F30E2",
+				whiteLilac:
+					"#f3f0ff",
 				selago:
 					"#FBFAFE",
 				pGray:
