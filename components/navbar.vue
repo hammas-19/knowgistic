@@ -72,8 +72,9 @@ input:checked+div span.line-2 {
             <div class="flex items-center justify-between relative">
                 <!-- Mobile menu -->
                 <div class="flex lg:hidden">
-
-                    <img v-show="!isOpenBurgerMenu" src="/Logo.svg" class="w-fit absolute left-0 -top-5" alt="">
+                    <NuxtLink to="/">
+                        <img v-show="!isOpenBurgerMenu" src="/Logo.svg" class="w-fit absolute left-0 -top-5" alt="">
+                    </NuxtLink>
 
 
                     <div @click="isOpenBurgerMenu = !isOpenBurgerMenu"
@@ -93,13 +94,13 @@ input:checked+div span.line-2 {
                     <!-- burger menu icon button -->
 
                     <!-- <div class="switch" @click="isOpenBurgerMenu = !isOpenBurgerMenu">
-                            <input type="checkbox">
-                            <div>
-                                <span class="line-1"></span>
-                                <span class="line-2"></span>
-                                <span class="line-3"></span>
-                            </div>
-                        </div> -->
+                                <input type="checkbox">
+                                <div>
+                                    <span class="line-1"></span>
+                                    <span class="line-2"></span>
+                                    <span class="line-3"></span>
+                                </div>
+                            </div> -->
 
                 </div>
             </div>
@@ -108,8 +109,9 @@ input:checked+div span.line-2 {
             <div :class="isOpenBurgerMenu ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'"
                 class="absolute inset-x-0 justify-center z-20 w-full grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 bg-selago lg:p-0 top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
                 <div class="flex flex-col lg:flex-row gap-6 items-center lg:justify-between justify-center w-full">
+                    <NuxtLink to="/">
                     <img src="/Logo.svg" class="w-fit self-center md:self-auto py-1" alt="Logo">
-
+                    </NuxtLink>
                     <span class=" w-full flex md:flex-row flex-col  justify-center">
                         <NuxtLink v-for="(navLink, index) in NavbarLink" :to="navLink.href" :key="index"
                             @click="isOpenBurgerMenu = !isOpenBurgerMenu"
