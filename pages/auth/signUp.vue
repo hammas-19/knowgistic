@@ -1,9 +1,9 @@
 <template>
     <div class="bg-selago w-full flex flex-col justify-center items-center h-screen gap-10">
 
-        <span>
+        <NuxtLink to="/">
             <img src="/Logo.svg" class="md:w-[280px] w-[200px] " alt="">
-        </span>
+        </NuxtLink>
 
         <div class="md:p-8 p-2 lg:w-1/2 mx-auto text-ebonyClay">
             <div class="bg-white md:border-4 border-2 border-whiteLilac rounded-t-lg py-8 px-2 ">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-whiteLilac rounded-b-lg py-12 px-4 lg:px-24 text-xs md:text-base">
+            <div class="bg-whiteLilac rounded-b-lg py-12 px-4 lg:px-24 text-xs   md:text-base">
                 <p class="text-center text-gray-500 font-light"> Or sign up with credentials </p>
                 <form class="mt-6">
                     <div class="relative mt-3 flex justify-between gap-3">

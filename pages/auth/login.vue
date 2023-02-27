@@ -1,9 +1,9 @@
 <template>
     <div class="bg-selago w-full flex flex-col justify-center items-center h-screen gap-10">
 
-        <span>
+        <NuxtLink to="/">
             <img src="/Logo.svg" class="md:w-[280px] w-[200px] " alt="">
-        </span>
+        </NuxtLink>
         <div class="p-8 lg:w-1/2 mx-auto">
             <div class="bg-white rounded-t-lg p-8 md:border-4 border-2 border-whiteLilac">
                 <p class="text-center text-sm text-gray-400 font-light">Sign in with</p>

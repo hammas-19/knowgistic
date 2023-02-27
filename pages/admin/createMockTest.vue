@@ -22,7 +22,7 @@
     <div class="flex items-center gap-2 flex-col w-full h-screen relative bg-selago">
 
         <div class="w-full flex container justify-between md:items-center items-end md:py-5 py-3 mx-auto">
-            <span class=""><img src="/Logo.svg" class="md:w-80" alt=""></span>
+            <NuxtLink to="/"><img src="/Logo.svg" class="md:w-80" alt=""></NuxtLink>
 
             <h1 class="text-comet font-semibold md:text-4xl text-xl">Create Mocks</h1>
         </div>
