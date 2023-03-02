@@ -20,7 +20,7 @@
 }
 
 .carousel__slide:active {
-  border: 10px solid yellowgreen;
+  border: 1px solid yellowgreen;
 }
 
 .carousel__item .correct {
@@ -41,14 +41,15 @@
   animation: cutter ease-in forwards 1;
   animation-duration: 2s;
 }
+
 </style>
 <template>
   <Carousel :autoplay="2000" :wrap-around="true" class="">
-    <Slide class="">
+    <Slide class="lg:py-10 py-5">
 
-      <div class="carousel__item flex flex-col justify-between items-center gap-1">
+      <div class="carousel__item flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
 
-        <div class="max-w-[475px] flex flex-col gap-5 text-center items-center">
+        <div class="max-w-[475px] flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
 
 
           <h1 class="font-bold md:text-4xl text-xl text-ebonyClay flex md:gap-4 gap-2 items-end">Prepare
@@ -81,20 +82,28 @@
 
         </div>
 
-        <span class="">
-          <img src="/images/hero/smarter.svg" class="w-full lg:max-h-[478px] md:max-h-[378px] max-h-[300px]" alt="">
-        </span>
+        <div class="relative">
+          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse " style="animation-duration: 3s;"  alt="">
+          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse " style="animation-duration: 3s;" alt="">
+
+          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+
+          <img src="/images/hero/heroimage.png" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
+        </div>
 
 
       </div>
 
     </Slide>
 
-    <Slide class="">
+    <Slide class="lg:py-10 py-5">
 
-      <div class="carousel__item flex flex-col justify-between items-center gap-1">
+      <div class="carousel__item flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
 
-        <div class="max-w-[500px] flex flex-col gap-5 text-center items-center">
+        <div class="max-w-[500px] flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
 
 
           <h1 class="font-bold md:text-4xl text-xl text-ebonyClay flex gap-2 items-end">
@@ -127,20 +136,28 @@
 
         </div>
 
-        <span class="">
-          <img src="/images/hero/effortless.svg" class="w-full lg:max-h-[478px] md:max-h-[378px] max-h-[300px]" alt="">
-        </span>
+        <div class="relative">
+          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse " style="animation-duration: 3s;"  alt="">
+          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse " style="animation-duration: 3s;" alt="">
+
+          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+
+          <img src="/images/hero/heroimage.png" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
+        </div>
 
 
       </div>
 
     </Slide>
 
-    <Slide class="">
+    <Slide class="lg:py-10 py-5">
 
-      <div class="carousel__item flex flex-col justify-between items-center gap-1">
+      <div class="carousel__item flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
 
-      <div class=" max-w-[600px] flex flex-col gap-5 text-center items-center">
+      <div class=" max-w-[600px] flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
 
 
           <h1 class="font-bold md:text-4xl text-xl text-ebonyClay flex md:gap-4 gap-2 items-end">Here, Exams are
@@ -172,9 +189,17 @@
 
         </div>
 
-        <span class="">
-          <img src="/images/hero/energizing.svg" class="w-full lg:max-h-[478px] md:max-h-[378px] max-h-[300px]" alt="">
-        </span>
+        <div class="relative">
+          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse " style="animation-duration: 3s;"  alt="">
+          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse " style="animation-duration: 3s;" alt="">
+
+          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+
+          <img src="/images/hero/heroimage.png" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
+        </div>
 
 
       </div>

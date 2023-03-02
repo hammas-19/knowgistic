@@ -143,7 +143,7 @@ const NavbarLink = [
         href: "/",
     },
     {
-        name: "New-home",
+        name: "Old-home",
         href: "/home",
     },
     {
