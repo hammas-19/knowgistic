@@ -3,8 +3,8 @@
 
         <!-- Hero -->
         <section class=" m:py-8 py-3">
-            
-                <Carousel />
+
+            <Carousel />
         </section>
 
         <!-- Why Choose Us -->
@@ -28,6 +28,13 @@
             </div>
         </section>
 
+        <!-- Stats -->
+        <section class="">
+
+            <Stats />
+
+        </section>
+
         <!-- Feature -->
         <section>
             <div class="py-16">
@@ -49,14 +56,6 @@
             </div>
         </section>
 
-
-        <!-- Gallery -->
-        <section class="">
-
-            <!-- Stats -->
-            <Stats />
-
-        </section>
 
         <!-- Testimonials -->
         <section class=" bg-selago relative">

@@ -8,7 +8,8 @@
                     you probably haven't heard of them man bun deep jianbing selfies heirloom prism
                     food truck ugh squid celiac humblebrag.</p>
             </div>
-            <div class="flex flex-wrap -m-4 text-center border md:p-8 p-4 rounded-2xl bg-moss">
+
+            <div class="flex flex-wrap -m-4 text-center border md:p-8 p-4 rounded-2xl bg-selago">
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
                     <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-selago">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
