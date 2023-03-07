@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-white">
-        <div class="container px-6 py-8 mx-auto bg-alabaster border-2 rounded-t-3xl">
+        <div class="container px-6 py-8 mx-auto bg-alabaster rounded-t-3xl">
             <div class="text-center">
                 <span class="flex justify-center">
                     <img src="/Logo.svg" class="w-40" alt="Logo">
