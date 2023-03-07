@@ -22,12 +22,12 @@
                 <h1 class="text-xl">A letter from the founders</h1>
                 <div
                     class="relative md:max-w-[65%] max-w-[98%] md:p-10 py-6 md:px-10 px-4 rounded-xl bg-whiteLilac text-ebonyClay ">
-                    <img src="images/hero/World.svg"
+                    <img src="/images/hero/World.svg"
                         class="md:block hidden bg-[#ccf5cc] w-[85px] rounded-full absolute md:-top-12 -top-5 md:right-[20%] right-0"
                         alt="World">
-                    <img src="images/hero/Data.svg"
+                    <img src="/images/hero/Data.svg"
                         class="md:block hidden bg-[#f7f98d] w-[85px] rounded-full absolute -left-12 top-[30%]" alt="World">
-                    <img src="images/hero/Rocket.svg"
+                    <img src="/images/hero/Rocket.svg"
                         class="md:block hidden  bg-[#9dc6ff] rounded-full absolute -bottom-12  right-[35%]" alt="World">
 
                     <span class="leading-10">
