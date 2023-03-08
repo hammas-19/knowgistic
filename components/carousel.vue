@@ -47,7 +47,7 @@
   <Carousel :autoplay="2000" :wrap-around="true" class="">
     <Slide class="lg:py-10 py-5">
 
-      <div class="carousel__item flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
+      <div class="carousel__item px-2 flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
 
         <div class="max-w-[475px] flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
 
@@ -101,7 +101,7 @@
 
     <Slide class="lg:py-10 py-5">
 
-      <div class="carousel__item flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
+      <div class="carousel__item px-2 flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
 
         <div class="max-w-[500px] flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
 
@@ -155,7 +155,7 @@
 
     <Slide class="lg:py-10 py-5">
 
-      <div class="carousel__item flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
+      <div class="carousel__item px-2 flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
 
       <div class=" max-w-[600px] flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
 
