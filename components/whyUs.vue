@@ -12,7 +12,7 @@
 </style>
 <template>
     <section
-        class="text-ebonyClay bg-selago md:rounded-3xl rounded-xl lg:container mx-3 lg:mx-auto flex justify-center px-2">
+        class="text-ebonyClay bg-selago md:rounded-3xl rounded-xl lg:container mx-3 lg:mx-auto flex justify-center p-2">
         <div class=" lg:p-12 p-2 grid md:grid-cols-4 grid-cols-2 lg:gap-14 md:gap-10 gap-5">
 
             <div v-for="data in data"
@@ -41,29 +41,25 @@ const data = [
         title: "Lattest pattern tests",
         img: '/banners/certificate.svg',
         tab: '1',
-        content: "content for 1 that does'nt exist here but we are tryna figure, content for 1 that does'nt exist here but we are tryna figure, content for 1 that does'nt exist here but we are tryna figure",
-        katapita: ["content"]
+        content: "Stay up-to-date with exam formats.",
     },
     {
         title: "Mock Exams",
         img: '/banners/online-education-app.png',
         tab: '2',
-        content: "content for 2 that does'nt exist here but we are tryna figure",
-        katapita: ["content"]
+        content: "Practice with simulated exams",
     },
     {
         title: "Past papers",
         img: '/banners/certificate.svg',
         tab: '3',
-        content: "content for 3 that does'nt exist here but we are tryna figure",
-        katapita: ["content"]
+        content: "Review and analyze previous exams",
     },
     {
         title: "Subject-wise Preps",
         img: '/banners/online-education-app.png',
         tab: '4',
-        content: "content for 4 that does'nt exist here but we are tryna figure",
-        katapita: ["content"]
+        content: "Focus on specific topics efficiently",
     },
 ]
 

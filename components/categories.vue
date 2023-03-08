@@ -5,15 +5,11 @@
 </style>
 <template>
     <div>
-        <section class="bg-selago  lg:container lg:px-0 mx-auto rounded-3xl relative">
-            <!-- fading div -->
-            <div
-                class="absolute w-full h-20 md:h-36 bottom-0 bg-cardFade z-10 justify-center items-end flex py-8 rounded-b-3xl">
-            </div>
+        <section class="bg-selago  lg:container lg:px-0 mx-auto rounded-3xl">
 
 
-        <div class="lg:container mx-auto px-3 ">
-            <div class="flex  md:justify-center justify-evenly md:gap-20 gap-5 py-1">
+            <div class="lg:container mx-auto px-3 ">
+                <div class="flex  md:justify-center justify-evenly md:gap-20 gap-5 py-1">
                     <button v-for="tab in tabs" :key="tab" @click="currentTab = tab"
                         class="text-ebonyClay border-b-4 border-purplHeart font-semibold md:text-base text-xs flex items-center justify-end  md:flex-row flex-col  md:gap-3 gap-0 opacity-30"
                         :class="[{ 'md:flex-row-reverse': tab == 'University entrance' }, { 'opacity-100': tab == currentTab }]">
@@ -38,26 +34,28 @@
 
                             <span
                                 class="cursor-pointer bg-purplHeart md:px-14 px-8 md:py-5 py-2 font-semibold rounded-lg text-white text-sm md:text-lg">View
-                                    All Govt Jobs</span>
+                                            All Govt Jobs</span>
 
-                            </NuxtLink> -->
+                                    </NuxtLink> -->
 
                 <!-- Uni Entrance Exams -->
                 <!-- <NuxtLink v-show="currentTab === 'University entrance'" to="/uniExams">
 
                             <span
                                 class="cursor-pointer bg-purplHeart md:px-14 px-4 md:py-5 py-2 font-semibold rounded-lg text-white text-sm md:text-lg">View
-                                    All Uni Entrance exams</span>
+                                            All Uni Entrance exams</span>
 
-                            </NuxtLink> -->
+                                    </NuxtLink> -->
 
+                    <NuxtLink to="/categories/[slug].vue">
 
-                    <span v-if="currentTab === 'Govt Jobs'"
-                        class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
+                        <span v-if="currentTab === 'Govt Jobs'"
+                            class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
 
-                        <JobElement v-for="items in 24" />
-
-                    </span>
+                            <JobElement v-for="items in 24" />
+                        </span>
+                    </NuxtLink>
+                    
                     <p v-if="currentTab === 'University entrance'"
                         class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
                         <UniElement v-for="items in 12" />
