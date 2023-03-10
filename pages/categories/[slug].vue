@@ -2,8 +2,7 @@
     <div>
 
         <section class=" hero bg-center bg-no-repeat ">
-            <div
-                class="lg:container mx-auto py-8 px-2 flex flex-col justify-center items-center md:gap-10 gap-5">
+            <div class="lg:container mx-auto py-8 px-2 flex flex-col justify-center items-center md:gap-10 gap-5">
 
                 <span class="w-fit items-center">
                     <img src="/images/GOVTpk.png" class="w-full max-w-[100px]" alt="">
@@ -29,10 +28,22 @@
                     </button>
                 </div>
 
-                <div class="bg-selago md:p-10 p-4 rounded-2xl text-comet md:text-lg text-sm md:min-h-[calc(100vh-400px)] min-h-[calc(100vh-200px)]">
+                <div
+                    class="bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:min-h-[calc(100vh-400px)] min-h-[calc(100vh-200px)] relative">
                     <!-- tab1 content -->
-                    <div v-if="currentTab === 'Details'" class="flex flex-wrap justify-center gap-9">
-                        Details Here
+                    <div v-if="currentTab === 'Details'" class="flex justify-between gap-3 h-full ">
+
+                        <!-- Content -->
+                        <span>
+                            <HeadingText/>
+                        </span>
+                       
+                       <!-- Extras -->
+                        <span class="absolute right-2 bottom-2">
+
+                            <CalenderTimer />
+                        
+                        </span>
 
                     </div>
 
