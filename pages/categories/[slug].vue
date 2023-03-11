@@ -1,3 +1,8 @@
+<style scoped>
+.window::-webkit-scrollbar {
+    display: none;
+}
+</style>
 <template>
     <div>
 
@@ -29,33 +34,47 @@
                 </div>
 
                 <div
-                    class="bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:min-h-[calc(100vh-400px)] min-h-[calc(100vh-200px)] relative">
+                    class="bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:h-[calc(100vh-400px)] h-[calc(100vh-200px)] relative">
                     <!-- tab1 content -->
-                    <div v-if="currentTab === 'Details'" class="flex justify-between gap-3 h-full ">
+                    <div v-if="currentTab === 'Details'"
+                        class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40">
 
                         <!-- Content -->
-                        <span>
-                            <HeadingText/>
-                        </span>
-                       
-                       <!-- Extras -->
+                        <div v-for="items in 9">
+
+                            IB ACIO is a graduate-level examination conducted by the Ministry of Home Affairs (MHA) for the
+                            recruitment of Intelligence Bureau Assistant Central Intelligence Officer. An official IB ACIO
+                            2022 notification has been released by the MHA through an employment advertisement to recruit
+                            eligible candidates for the post of ACIO Grade-I & II/ Executive, JIO-I& II/ Executive, and
+                            other posts. Going by the advertisement, a total of 766 vacancies are to be filled up through
+                            this recruitment drive. <br>
+
+                        </div>
+
+                        <!-- Extras -->
                         <span class="absolute right-2 bottom-2">
 
-                            <CalenderTimer />
-                        
+                            <CategoryTimer />
+
                         </span>
 
                     </div>
 
                     <!-- tab2 content -->
-                    <span v-if="currentTab === 'prerequisite'">
-                        PreRequisite Here
-                    </span>
+                    <div v-if="currentTab === 'prerequisite'"
+                        class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40">
+
+                        <CategoryPreReqEl />
+
+                    </div>
 
                     <!-- tab3 content -->
-                    <span v-if="currentTab === 'Past papers'">
-                        past Papers here
-                    </span>
+                    <div v-if="currentTab === 'Past papers'"
+                        class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40 pl-3">
+                        
+                        <CategoryPastPaperEl/>
+
+                    </div>
 
                 </div>
             </div>
