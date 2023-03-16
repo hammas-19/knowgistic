@@ -103,7 +103,27 @@
     </div>
 </template>
 <script setup>
+import axios from 'axios';
+
 definePageMeta({
-    layout: "none",
+    layout: "",
 });
+
+
+axios(`https://induspublic.info/moc_api/api.php`, {
+    method: "POST",
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    data: {
+        api_key: "AIzaSyCBtGtGr6xvtGOFFfxy2WF0ug_auHa8Gdo",
+        api_type: "GET_ALL_SUBJECT"
+    }
+
+}).then((response) => {
+    console.log(response.data)
+}).catch((err) => {
+    console.log(err);
+});
+
 </script>

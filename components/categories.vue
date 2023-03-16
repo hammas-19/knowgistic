@@ -5,19 +5,19 @@
 </style>
 <template>
     <div>
-        <section class="bg-selago  lg:container lg:px-0 mx-auto rounded-3xl">
+        <section class="bg-selago  lg:container lg:px-0 mx-auto rounded-3xl overflow-hidden">
 
 
-            <div class="lg:container mx-auto px-3 ">
-                <div class="flex  md:justify-center justify-evenly md:gap-20 gap-5 py-1">
+            <div class="lg:container mx-auto">
+                <div class="flex shadow-lg shadow-[#e7e7e7] md:justify-center justify-evenly md:gap-20 gap-5 py-5 bg-whiteLilac">
                     <button v-for="tab in tabs" :key="tab" @click="currentTab = tab"
                         class="text-ebonyClay border-b-4 border-purplHeart font-semibold md:text-base text-xs flex items-center justify-end  md:flex-row flex-col  md:gap-3 gap-0 opacity-30"
                         :class="[{ 'md:flex-row-reverse': tab == 'University entrance' }, { 'opacity-100': tab == currentTab }]">
 
 
                         <img v-if="tab == 'University entrance'" src="/images/hero/mortarboard-unscreen.gif"
-                            class="md:w-20 w-12" alt="">
-                        <img v-if="tab == 'Govt Jobs'" src="/images/hero/briefcase-unscreen.gif" class="md:w-14 w-10"
+                            class="w-12" alt="">
+                        <img v-if="tab == 'Govt Jobs'" src="/images/hero/briefcase-unscreen.gif" class=" w-10"
                             alt="">
 
 

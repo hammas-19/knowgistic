@@ -12,7 +12,7 @@
 </style>
 <template>
     <section
-        class="text-ebonyClay bg-selago md:rounded-3xl rounded-xl lg:container mx-3 lg:mx-auto flex justify-center p-2">
+        class="text-ebonyClay bg-selago lg:mx-auto flex justify-center p-2">
         <div class=" lg:p-12 p-2 grid md:grid-cols-4 grid-cols-2 lg:gap-14 md:gap-10 gap-5">
 
             <div v-for="data in data"
@@ -33,6 +33,7 @@
 
         </div>
     </section>
+    
 </template>
 <script setup>
 
