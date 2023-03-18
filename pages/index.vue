@@ -26,7 +26,7 @@
                 </span>
 
             </div>
-            <div class="py-16">
+            <div class="py-16 px-2">
 
                 <Categories />
 
@@ -42,7 +42,7 @@
 
         <!-- Feature -->
         <section>
-            <div class="py-16">
+            <div class="py-32">
 
                 <!-- Typo/Info -->
 
@@ -52,10 +52,18 @@
             </div>
         </section>
 
+        <!-- CTA -->
+        <section>
+            <div class="py-16  bg-whiteLilac">
+
+                <Cta />
+
+            </div>
+        </section>
+
 
         <!-- Testimonials -->
-        <section class=" bg-selago relative">
-
+        <section class=" py-16 border bg-selago relative">
 
             <Testimonials />
 
