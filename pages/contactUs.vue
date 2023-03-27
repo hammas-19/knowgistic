@@ -71,7 +71,7 @@
     <section>
 
         <section
-            class="bg-selago py-10 bg-none md:bg-[url('/images/ContactUS/paperplaneBg.png')] bg-scroll  bg-center bg-contain bg-no-repeat">
+            class="bg-selago py-10 bg-none md:bg-[url('/images/ContactUS/paperplaneBg.webp')] bg-scroll  bg-center bg-contain bg-no-repeat">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
 
                 <div

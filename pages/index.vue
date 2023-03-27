@@ -42,7 +42,7 @@
 
         <!-- Feature -->
         <section>
-            <div class="py-32">
+            <div class="pb-32">
 
                 <!-- Typo/Info -->
 
@@ -54,7 +54,7 @@
 
         <!-- CTA -->
         <section>
-            <div class="py-16  bg-whiteLilac">
+            <div class="py-16 mt-32 md:mt-0 bg-whiteLilac">
 
                 <Cta />
 
@@ -63,7 +63,7 @@
 
 
         <!-- Testimonials -->
-        <section class=" py-16 border bg-selago relative">
+        <section class=" py-16 relative">
 
             <Testimonials />
 

@@ -66,7 +66,7 @@
 <template>
 
     <div
-        class="marquee-box  mx-auto overflow-hidden flex items-center flex-col md:flex-row justify-between gap-10 lg:container px-9 md:h-[calc(100vh-400px)] h-[calc(100vh-80px)]">
+        class="marquee-box bg-selago rounded-3xl mx-auto overflow-hidden flex items-center flex-col md:flex-row justify-between gap-10 lg:container px-9 md:h-[calc(100vh-400px)] h-[calc(100vh-80px)]">
 
 
         <div>
