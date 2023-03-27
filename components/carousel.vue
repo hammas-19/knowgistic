@@ -19,27 +19,75 @@
   }
 }
 
-.carousel__slide:active {
-  border: 1px solid yellowgreen;
-}
-
-.carousel__item .correct {
+/* manipulation 1 */
+.carousel__item .correct1 {
   opacity: 0;
   animation: replacer ease-in forwards 1;
-  animation-duration: 2s;
-  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 
-.carousel__item .arrow {
+/* manipulation 1 */
+.carousel__item .arrow1 {
   opacity: 0;
   animation: replacer ease-in forwards 1;
-  animation-duration: 2s;
-  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 
-.carousel__item .wrong {
+/* manipulation 1 */
+.carousel__item .wrong1 {
   animation: cutter ease-in forwards 1;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
+}
+
+/* manipulation 2 */
+.carousel__item .correct2 {
+  opacity: 0;
+  animation: replacer ease-in forwards 1;
+  animation-duration: 1s;
+  animation-delay: 3.2s;
+}
+
+/* manipulation 2 */
+.carousel__item .arrow2 {
+  opacity: 0;
+  animation: replacer ease-in forwards 1;
+  animation-duration: 1s;
+  animation-delay: 3.2s;
+}
+
+/* manipulation 2 */
+.carousel__item .wrong2 {
+  animation: cutter ease-in forwards 1;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+}
+
+
+
+/* manipulation 3 */
+.carousel__item .correct3 {
+  opacity: 0;
+  animation: replacer ease-in forwards 1;
+  animation-duration: 1s;
+  animation-delay: 5.7s;
+}
+
+/* manipulation 3 */
+.carousel__item .arrow3 {
+  opacity: 0;
+  animation: replacer ease-in forwards 1;
+  animation-duration: 1s;
+  animation-delay: 5.7s;
+}
+
+/* manipulation 3 */
+.carousel__item .wrong3 {
+  animation: cutter ease-in forwards 1;
+  animation-delay: 5.4s;
+  animation-duration: 0.5s;
+  
 }
 
 </style>
@@ -60,13 +108,13 @@
 
                 <!-- correction -->
                 <span
-                  class="correct md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Smarter</span>
+                  class="correct1 md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Smarter</span>
                 <!-- arrow -->
-                <span class="arrow h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
+                <span class="arrow1 h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
               </div>
 
               <!-- the cut -->
-              <span class="wrong ">Harder</span>
+              <span class="wrong1 ">Harder</span>
             </span>
 
             Way
@@ -114,13 +162,13 @@
 
                 <!-- correction -->
                 <span
-                  class="correct md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Whiz</span>
+                  class="correct2 md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Whiz</span>
                 <!-- arrow -->
-                <span class="arrow h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
+                <span class="arrow2 h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
               </div>
 
               <!-- the cut -->
-              <span class="wrong ">Prepare</span>
+              <span class="wrong2 ">Prepare</span>
             </span>
             <span>Exams Seamlessly</span>
             
@@ -168,13 +216,13 @@
 
                 <!-- correction -->
                 <span
-                  class="correct md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Energizing</span>
+                  class="correct3 md:text-4xl text-2xl transition-transform -rotate-[4deg] font-handlee text-purplHeart font-medium">Energizing</span>
                 <!-- arrow -->
-                <span class="arrow h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
+                <span class="arrow3 h-8 "><img src="/images/hero/arrow.svg" class="h-full w-full" alt="arrow"></span>
               </div>
 
               <!-- the cut -->
-              <span class="wrong ">Exhausting</span>
+              <span class="wrong3 ">Exhausting</span>
             </span>
             
           </h1>
