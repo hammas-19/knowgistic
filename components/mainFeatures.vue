@@ -18,35 +18,36 @@ progress[value]::-webkit-progress-bar {
 
             <div class="flex items-center justify-center gap-5 w-full">
                 <button v-for="tab in tabs" :key="tab"
-                    class="text-comet md:p-2 p-0 font-medium md:text-xl text-base transition-all opacity-30"
-                    :class="{ 'text-[#5F30E2] opacity-100': currentTab === tab }"
-                    @click="currentTab = tab">
+                    class="text-comet md:p-2 p-0 font-medium md:text-base text-sm rounded-3xl transition-all opacity-30"
+                    :class="{ 'text-[#fff] bg-[#5F30E2] opacity-100': currentTab === tab }" @click="currentTab = tab">
                     {{ tab }}
                     <!-- <progress v-show="tab === currentTab" id="file" value="78" max="100"
-                        class="h-[6px] absolute bottom-0  w-[97%] left-1"></progress> -->
-                </button>
+                            class="h-[6px] absolute bottom-0  w-[97%] left-1"></progress> -->
+            </button>
 
-            </div>
-            <div class="p-2 w-full bg-selago rounded-3xl">
+        </div>
+        <div class="p-2 w-full  rounded-3xl">
 
-                <div v-if="currentTab === 'Smart Preparation'">
+            <div v-if="currentTab === 'Smart Preparation'">
 
-                    <div class="flex h-full md:flex-row-reverse flex-col-reverse items-center justify-around">
+                <div class="flex items-center justify-around">
 
-                        <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
+                    <!-- <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
 
                             <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
                             <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
-                                ipsum dolor</span>
-                            <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
-                                volutpat diam
-                                quis.
-                            </span>
+                                    ipsum dolor</span>
+                                <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
+                                    volutpat diam
+                                    quis.
+                                </span>
 
-                        </div>
-                        <span class="h-fit md:w-[40%] w-full">
-                            <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
-                        </span>
+                            </div>
+                            <span class="h-fit md:w-[40%] w-full">
+                                <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
+                            </span> -->
+
+                        <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
 
                     </div>
 
@@ -56,7 +57,8 @@ progress[value]::-webkit-progress-bar {
 
                     <div class="flex h-full md:flex-row-reverse flex-col-reverse items-center justify-between">
 
-                        <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
+                        <div
+                            class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
 
                             <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
                             <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
@@ -71,28 +73,30 @@ progress[value]::-webkit-progress-bar {
                             <img src="/walkingman-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
                         </span>
 
-                    </div>
-
                 </div>
 
-                <div v-if="currentTab === 'Lattest Patterns'">
+            </div>
 
-                    <div class="flex h-full md:flex-row-reverse flex-col-reverse items-center justify-between">
+            <div v-if="currentTab === 'Lattest Patterns'">
 
-                        <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
+                <div class="flex items-center justify-around">
 
-                            <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
-                            <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
-                                ipsum dolor</span>
-                            <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
-                                volutpat diam
-                                quis.
-                            </span>
+                    <!-- <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
 
-                        </div>
-                        <span class="h-fit md:w-[40%] w-full">
-                            <img src="/defaulters.jpg" class="w-full h-full rounded-3xl object-cover" alt="">
-                        </span>
+    <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
+    <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
+            ipsum dolor</span>
+        <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
+            volutpat diam
+            quis.
+        </span>
+
+    </div>
+    <span class="h-fit md:w-[40%] w-full">
+        <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
+    </span> -->
+
+                        <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
 
                     </div>
 

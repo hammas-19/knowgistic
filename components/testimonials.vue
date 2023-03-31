@@ -66,11 +66,19 @@
 <template>
 
     <div
-        class="marquee-box bg-selago md:rounded-3xl mx-auto overflow-hidden flex items-center flex-col md:flex-row justify-between gap-10 lg:container px-9 md:h-[calc(100vh-400px)] h-[calc(100vh-80px)]">
+        class="marquee-box bg-selago md:rounded-3xl mx-auto overflow-hidden flex items-center flex-col md:flex-row justify-between gap-10 lg:container px-9 md:h-[calc(100vh-400px)] h-screen">
 
 
-        <div>
-            <HeadingText />
+        <div class="flex flex-col gap-4 text-center md:w-1/2 w-full">
+
+            <h1 class="md:text-7xl text-4xl font-semibold font-handlee text-purplHeart">"
+                
+                <span class="text-comet">
+                    What people are saying about us ...
+                </span>
+
+                "</h1>
+
         </div>
 
         <div
