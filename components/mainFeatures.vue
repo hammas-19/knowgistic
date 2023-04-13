@@ -18,7 +18,7 @@ progress[value]::-webkit-progress-bar {
 
             <div class="flex items-center justify-center gap-5 w-full">
                 <button v-for="tab in tabs" :key="tab"
-                    class="text-comet md:p-2 p-0 font-medium md:text-base text-sm rounded-3xl transition-all opacity-30"
+                    class="text-comet md:p-2 p-2 font-medium md:text-base text-xs md:rounded-3xl rounded-lg transition-all opacity-30"
                     :class="{ 'text-[#fff] bg-[#5F30E2] opacity-100': currentTab === tab }" @click="currentTab = tab">
                     {{ tab }}
                     <!-- <progress v-show="tab === currentTab" id="file" value="78" max="100"
@@ -26,11 +26,11 @@ progress[value]::-webkit-progress-bar {
             </button>
 
         </div>
-        <div class="p-2 w-full  rounded-3xl">
+        <div class="w-full md:rounded-3xl rounded-lg">
 
             <div v-if="currentTab === 'Smart Preparation'">
 
-                <div class="flex items-center justify-around">
+                <div class="flex items-center justify-around md:rounded-3xl rounded-lg overflow-hidden">
 
                     <!-- <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
 
@@ -47,7 +47,7 @@ progress[value]::-webkit-progress-bar {
                                 <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
                             </span> -->
 
-                        <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
+                        <img src="/images/cta/feature.gif" class="max-h-96" alt="feature">
 
                     </div>
 

@@ -42,7 +42,7 @@
 
         <!-- Feature -->
         <section>
-            <div class="pb-32">
+            <div class="md:pb-32 pb-0">
 
                 <!-- Typo/Info -->
 
