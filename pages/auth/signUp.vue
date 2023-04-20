@@ -101,6 +101,9 @@
             </div>
         </div>
     </div>
+    <div>
+        {{ apiData }}
+    </div>
 </template>
 <script setup>
 import axios from 'axios';
@@ -109,6 +112,7 @@ definePageMeta({
     layout: "",
 });
 
+const apiData = ref();
 
 axios(`https://induspublic.info/moc_api/api.php`, {
     method: "POST",
@@ -116,12 +120,13 @@ axios(`https://induspublic.info/moc_api/api.php`, {
         'Content-Type': 'application/json'
     },
     data: {
-        api_key: "AIzaSyCBtGtGr6xvtGOFFfxy2WF0ug_auHa8Gdo",
-        api_type: "GET_ALL_SUBJECT"
+        "api_key": "AIzaSyCBtGtGr6xvtGOFFfxy2WF0ug_auHa8Gdo",
+  "api_type": "GET_ALL_SUBJECT"
     }
 
 }).then((response) => {
     console.log(response.data)
+    apiData.value = response.data
 }).catch((err) => {
     console.log(err);
 });
