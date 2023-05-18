@@ -66,10 +66,10 @@
                 <div class="flex flex-wrap gap-10  max-h-[calc(100vh-160px)] overflow-y-scroll window py-3 w-full">
 
                     <!-- Quick OverView -->
-                    <div class="p-2 w-full bg-selago mx-2 rounded-2xl">
+                    <div class="p-2 w-full ">
 
-                        <h1 class="text-4xl text-comet pb-5 font-bold underline">Quick OverView</h1>
-                        <div class="grid grid-cols-3 gap-5 items-center">
+                        <h1 class="text-4xl mx-2 text-comet pb-5 font-bold underline">Quick OverView</h1>
+                        <div class="grid grid-cols-3 p-2 gap-5 items-center bg-selago rounded-xl">
 
                             <div class="">
                                 <UserStats />
@@ -77,7 +77,7 @@
 
                             <!-- calender -->
                             <div
-                                class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-xl p-2 bg-whiteLilac shadow-xl ">
+                                class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-xl p-2 bg-whiteLilac max-h-60">
 
                                 <div class="flex justify-between w-full items-center">
                                     <h1 class="text-comet text-sm font-medium">Presence</h1>
@@ -94,6 +94,9 @@
                                     </span>
                                 </div>
 
+                            </div>
+                            <div class="p-2 shadow-inner rounded-2xl bg-whiteLilac h-fit ">
+                                <UserProgressBar class="w-full mx-auto"/>
                             </div>
 
                         </div>
