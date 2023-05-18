@@ -1,4 +1,7 @@
 <style scoped>
+*{
+    scroll-behavior: smooth;
+}
 .window::-webkit-scrollbar-track {
     background-color: #f0ecfd;
 
@@ -16,6 +19,15 @@
             #e4daff 25%,
             transparent 100%)
 }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
 <template>
     <div class="bg-selago">
@@ -27,32 +39,38 @@
                 Show/Hide
             </span>
 
-            <div class="flex md:flex-row flex-col justify-between gap-3 md:items-end items-center"
+            <div class="flex md:flex-row flex-col justify-between gap-3 md:items-end items-center relative"
                 :class="{ 'hidden': !showNav }">
                 <NuxtLink to="/">
                     <img src="/Logo.svg" class="w-40" alt="Logo">
                 </NuxtLink>
 
                 <div class="flex flex-col md:flex-row gap-5 items-center text-sm">
-                    <a href="overview">overview</a>
-                    <a href="report">report</a>
-                    <a href="updates">updates</a>
+                    <a href="#overview">overview</a>
+                    <a href="#report">report</a>
+                    <a href="#updates">updates</a>
                     <a href="events">events</a>
                 </div>
 
-                <UserAvatar class="h-10 w-10" />
+                <div class="flex gap-4">
+                    
+                    <UserNotification class=""/>
+                    <UserAvatar class="h-10 w-10" />
+                </div>
             </div>
 
         </section>
 
-        <section class="relative max-w-7xl mx-auto py-10 px-3 h-screen">
+        <section class="relative max-w-7xl mx-auto py-10 px-3">
             <span @click="show = !show" class="text-sm border absolute left-1 top-3 cursor-pointer">Menu</span>
 
-            <div class="flex gap-2  md:rounded-3xl rounded-md overflow-hidden bg-white ">
+            <div class="relative flex gap-2  md:rounded-3xl rounded-md overflow-hidden bg-white ">
 
                 <!-- Side Navigation -->
-                <div v-if="show" class="bg-whiteLilac w-full max-w-xs max-h-[calc(100vh-160px)] overflow-y-scroll window "
-                    :class="{ 'hidden md:block': !show }">
+                <Transition name="fade">
+                <div v-if="show" class="bg-whiteLilac w-full max-w-xs max-h-[calc(100vh-160px)] h-full overflow-y-scroll window "
+                :class="[{ 'absolute z-20': show }, { 'hidden md:block': !show }]">
+                    
 
                     <div class="flex flex-col gap-5 py-10 px-3 ">
 
@@ -61,15 +79,16 @@
                     </div>
 
                 </div>
+            </Transition>
 
                 <!-- content -->
-                <div class="flex flex-wrap gap-10  max-h-[calc(100vh-160px)] overflow-y-scroll window py-3 w-full">
+                <div class="flex flex-wrap gap-10  md:max-h-[calc(100vh-160px)] max-h-[calc(100vh-80px)] overflow-y-scroll window py-3 w-full" :class="{'opacity-40 transition-all duration-500':show}">
 
                     <!-- Quick OverView -->
-                    <div class="p-2 w-full ">
+                    <div id="overview" class="p-2 w-full transition-all duration-500">
 
-                        <h1 class="text-4xl mx-2 text-comet pb-5 font-bold underline">Quick OverView</h1>
-                        <div class="grid grid-cols-3 p-2 gap-5 items-center bg-selago rounded-xl">
+                        <h1 class="text-4xl mx-2 text-comet pb-5 font-bold ">Quick OverView</h1>
+                        <div class="grid md:grid-cols-3 grid-cols-1 p-2 gap-5 items-center bg-selago rounded-xl">
 
                             <div class="">
                                 <UserStats />
@@ -95,17 +114,22 @@
                                 </div>
 
                             </div>
-                            <div class="p-2 shadow-inner rounded-2xl bg-whiteLilac h-fit ">
-                                <UserProgressBar class="w-full mx-auto"/>
+                            <div class="p-2 shadow-inner rounded-2xl bg-whiteLilac h-fit py-5">
+                                <UserProgressBar class="w-full  mx-auto"/>
                             </div>
 
                         </div>
 
                     </div>
-                    <div class="flex gap-3 flex-wrap w-full justify-between">
+                    <div id="report" class="flex gap-3 flex-wrap w-full justify-between p-2">
                         <CourseCard v-for="items in 8" />
                     </div>
+                    <Transition name="fade">
 
+                    <div id="updates" class="flex gap-3 flex-wrap w-full justify-between p-2">
+                        <UserProfileCourses v-for="items in 8" />
+                    </div>
+                </Transition>
                 </div>
 
             </div>

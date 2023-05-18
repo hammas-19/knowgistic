@@ -18,7 +18,7 @@
 [role="progressbar"] {
     --percentage: var(--value);
     --primary: #5F30E2;
-    --secondary: #e5e5e5;
+    --secondary: #e5e5e5ae;
     /* --size: 180px; */
     animation: progress 2s 0.5s forwards;
     width: var(--size);
@@ -37,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%),
+    background: conic-gradient(#5F30E2, #d4cbf1 calc(var(--percentage) * 1%),
             var(--secondary) 0);
     mask: radial-gradient(white 55%, transparent 0);
     mask-mode: alpha;
@@ -52,5 +52,5 @@
 
 </style>
 <template>
-        <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 67" class="max-h-52 text-4xl"></div>
+        <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 67" class="max-h-44 text-4xl"></div>
 </template>
