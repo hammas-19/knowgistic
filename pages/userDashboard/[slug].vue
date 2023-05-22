@@ -130,7 +130,7 @@
                     <Transition name="fade">
 
                         <div id="updates" class="flex gap-3 flex-wrap w-full justify-between p-2">
-                            <UserProfileCourses v-for="items in 8" />
+                            <UserProfileCourses v-for="items in 2" />
                         </div>
                     </Transition>
                 </div>
