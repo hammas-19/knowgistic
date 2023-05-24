@@ -70,7 +70,7 @@
                 <!-- Side Navigation -->
                 <Transition name="fade">
                     <div v-if="show"
-                        class="bg-whiteLilac w-full max-w-xs max-h-[calc(100vh-160px)] h-full overflow-y-scroll window flex flex-col"
+                        class="bg-whiteLilac w-full max-w-xs  h-full overflow-y-scroll window flex flex-col"
                         :class="[{ 'absolute z-20': show }, { 'hidden md:block': !show }]">
 
 
@@ -78,7 +78,7 @@
 
                             <UserAvatar class="self-center h-40 w-40 bg-whiteLilac" />
                         </div>
-                        <!-- <UserProfileBadge v-for="items in 2" /> -->
+                        <!-- <UserProfileBadge v-for="items in 2" /> --> 
 
                     </div>
                 </Transition>
@@ -90,33 +90,20 @@
                     <!-- Quick OverView -->
                     <div id="overview" class="p-2 w-full transition-all duration-500">
 
-                        <h1 class="text-4xl mx-2 text-comet pb-5 font-bold ">Quick OverView</h1>
+                        <h1 class="md:text-4xl text-2xl mx-2 text-comet pb-5 font-bold ">Quick OverView</h1>
                         <div class="grid md:grid-cols-3 grid-cols-1 p-2 gap-5 items-center bg-selago rounded-xl">
 
-                            <div class="">
+                            <div>
                                 <UserStats />
                             </div>
 
                             <!-- calender -->
-                            <div
-                                class="flex flex-col md:gap-4 gap-[2px] justify-between items-center rounded-xl p-2 bg-whiteLilac max-h-60">
-
-                                <div class="flex justify-between w-full items-center">
-                                    <h1 class="text-comet text-sm font-medium">Presence</h1>
-                                    <span class="text-xs">View all</span>
-                                </div>
-
-                                <div class="grid grid-cols-10 w-full">
-                                    <span v-for="items in 30" :class="{ 'text-purplHeart': items % 0.75 }"
-                                        class="flex flex-col items-center text-xs hover:shadow-md rounded-md transition-all">
-                                        <span>
-                                            {{ items }}
-                                        </span>
-                                        <img src="/images/index_v2/icons/medal.svg" class="md:w-10 w-8 md:h-10 h-8" alt="">
-                                    </span>
-                                </div>
-
+                            <div>
+                                <UserProfileCalender/>
                             </div>
+
+
+
                             <div class="p-2 shadow-inner rounded-2xl bg-whiteLilac h-fit py-5">
                                 <UserProgressBar class="w-full  mx-auto" />
                             </div>
@@ -126,6 +113,7 @@
                     </div>
                     <div id="report" class="flex gap-3 flex-wrap w-full justify-between p-2">
                         <!-- <CourseCard v-for="items in 8" /> -->
+                        <!-- <UserProfileCalender/> -->
                     </div>
                     <Transition name="fade">
 
@@ -146,5 +134,5 @@ definePageMeta({
     layout: "",
 });
 const show = ref(true)
-const showNav = ref(false)
+const showNav = ref(true)
 </script>
