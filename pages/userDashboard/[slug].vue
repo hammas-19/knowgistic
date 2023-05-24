@@ -87,6 +87,12 @@
                 <div class="flex flex-wrap gap-10  md:max-h-[calc(100vh-160px)] max-h-[calc(100vh-80px)] overflow-y-scroll window py-3 w-full"
                     :class="{ 'opacity-40 transition-all duration-500': show }">
 
+                    <!-- profile -->
+                    <div class="w-full px-5">
+                        <UserProfileWindow/>
+                    </div>
+
+
                     <!-- Quick OverView -->
                     <div id="overview" class="p-2 w-full transition-all duration-500">
 
@@ -111,16 +117,18 @@
                         </div>
 
                     </div>
+
+                    <div class="flex">
+                        <UserProfileDetail/>
+                    </div>
                     <div id="report" class="flex gap-3 flex-wrap w-full justify-between p-2">
                         <!-- <CourseCard v-for="items in 8" /> -->
                         <!-- <UserProfileCalender/> -->
                     </div>
-                    <Transition name="fade">
 
                         <div id="updates" class="flex gap-3 flex-wrap w-full justify-between p-2">
                             <UserProfileCourses v-for="items in 2" />
                         </div>
-                    </Transition>
                 </div>
 
             </div>
