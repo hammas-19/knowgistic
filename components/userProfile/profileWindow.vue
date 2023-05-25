@@ -4,10 +4,10 @@
 }
 </style>
 <template>
-    <div class="relative md:rounded-2xl rounded-xl overflow-hidden md:min-h-[400px] min-h-[200px]">
+    <div class="relative z-10 md:rounded-2xl rounded-xl overflow-hidden md:min-h-[400px] min-h-[200px] w-full">
     <img class="object-center object-cover absolute z-10 h-full w-full" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil0qhfnSK1rf0RIC26KEnWzC25Gxu1fzkl_HHQJZ3xylHue6k_bbnUhSisgQQI3PDy11D_5hJrWt420gSSf1KZ2Em1kHulNp85OAdbnrSQwUZ4XUzfdcwFMiSfytVZTqAx83F30m9_wDJUrVYZZYs84vgtLk0fMntJxFn9caJXZzBYbsPlWeXOEDlb/s320/369403158297539.6388bf15a8b97.jpg" alt="">
 
-    <div class="absolute z-20 bottom-3 right-0 left-0 flex justify-between bg-[#848484ca] backdrop-blur-md rounded-lg px-2 w-[95%] mx-auto items-end text-white">
+    <div class="absolute z-30 bottom-3 right-0 left-0 flex justify-between bg-[#848484ca] backdrop-blur-md rounded-lg px-2 w-[95%] mx-auto items-end text-white">
 
         <div class="flex md:gap-2 gap-[2px] items-center">
 
@@ -20,7 +20,7 @@
             </div>
 
         </div>
-        <span class="pb-2 text-sm text-ebonyClay">Details</span>
+        <slot name="detail"></slot>
 
     </div>
 

@@ -22,12 +22,12 @@
     </div>
 </template>
 <script setup>
-const props = defineProps({
-        level: {
-                type: String,
-                required: true,
-        }
-});
+// const props = defineProps({
+//         level: {
+//                 type: String,
+//                 required: true,
+//         }
+// });
 const courseData = [
 
     {
