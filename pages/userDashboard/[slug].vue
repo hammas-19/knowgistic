@@ -63,6 +63,7 @@
 
         </section>
 
+        <!-- Dashboard Frame -->
         <section class="relative max-w-7xl mx-auto py-10 px-3">
             <span @click="show = !show" class="text-sm border absolute left-1 top-3 cursor-pointer">Menu</span>
 
@@ -70,16 +71,20 @@
 
                 <!-- Side Navigation -->
                 <Transition name="fade">
-                    <div v-if="show" class="bg-whiteLilac w-full max-w-xs  h-full overflow-y-scroll window flex flex-col"
+                    <div v-if="show" class="bg-whiteLilac w-full max-w-xs  h-full overflow-y-scroll window flex flex-col items-center gap-5 justify-center"
                         :class="[{ 'absolute z-20': show }, { 'hidden md:block': !show }]">
 
+                        <img src="/Logo.svg" class="" alt="">
 
-                        <div
-                            class="flex flex-col gap-5 py-10 px-3  bg-contain bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSQCmb-mshqNXT_1kGtaSdoVMkgzLEgIA5yETZQc1I_wh6-KT5fS3NNsERfgtPPtnMT_nLTk0q2_mVjN84gIUE6OzmnTW-F08e78AzT_-tdxl7C52HfDO5xPtmsmtZ-0pSS4D36QumOBI3-aMNsGPi85uMDn6YRxKNFoc8OFAags7ihZlskFuuYC62/s320/profileBg.jpg')]">
-
-                            <UserAvatar class="self-center h-40 w-40 bg-whiteLilac" />
-                        </div>
-                        <!-- <UserProfileBadge v-for="items in 2" /> -->
+                    <span>
+                        OverView
+                    </span>
+                    <span href="#test" >
+                        Block
+                    </span>
+                    <span>
+                        Block 2
+                    </span>
 
                     </div>
                 </Transition>
@@ -88,6 +93,9 @@
                 <div class="flex flex-wrap gap-7  md:max-h-[calc(100vh-160px)] max-h-[calc(100vh-80px)] overflow-y-scroll window py-3 w-full"
                     :class="{ 'opacity-40 transition-all duration-500': show }">
 
+                    <section>
+
+                    
                     <!-- profile -->
                     <div class="w-full px-5">
                         <UserProfileWindow>
@@ -126,10 +134,10 @@
                     </div>
 
                     <div
-                        class="flex md:flex-row flex-col items-center w-full bg-selago justify-between md:divide-x-2 divide-y-2 md:divide-y-0 md:mx-5 mx-2 md:py-4 py-1 rounded-xl">
+                        class="flex md:flex-row flex-col items-center bg-selago justify-between md:divide-x-2 divide-y-2 md:divide-y-0 md:mx-5 mx-2 md:py-4 py-1 rounded-xl">
                         <UserProfileDetail id="details" />
 
-                        <div class="flex flex-col w-max gap-4 items-center justify-center md:p-5 p-2 bg-selago">
+                        <div class="flex flex-col  gap-4 items-center justify-center md:p-5 p-2 bg-selago">
 
                             <h2 class="text-xl text-comet">Registered for</h2>
 
@@ -144,6 +152,22 @@
                     <div id="updates" class="flex gap-3 flex-wrap w-full justify-between p-2">
                         <UserProfileCourses v-for="items in 2" />
                     </div>
+                </section>
+
+                <section id="test">
+                    <div
+                        class="flex md:flex-row flex-col items-center w-full bg-selago justify-between md:divide-x-2 divide-y-2 md:divide-y-0 md:mx-5 mx-2 md:py-4 py-1 rounded-xl">
+                        <UserProfileDetail id="details" />
+
+                        <div class="flex flex-col w-max gap-4 items-center justify-center md:p-5 p-2 bg-selago">
+
+                            <h2 class="text-xl text-comet">Registered for</h2>
+
+                            <JobElement class="bg-selago" />
+                        </div>
+                    </div>
+                </section>
+
                 </div>
 
             </div>
