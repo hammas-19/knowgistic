@@ -92,7 +92,8 @@
 
 </style>
 <template>
-  <Carousel :autoplay="2000" :wrap-around="true" class="">
+  <!-- :autoplay="2000" -->
+  <Carousel  :wrap-around="true" class="">
     <Slide class="lg:py-10 py-5">
 
       <div class="carousel__item px-2 flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
@@ -131,13 +132,13 @@
         </div>
 
         <div class="relative">
-          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse " style="animation-duration: 3s;"  alt="">
-          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;"  alt="">
+          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
-          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
           <img src="/images/hero/heroimage.webp" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
         </div>
@@ -185,13 +186,13 @@
         </div>
 
         <div class="relative">
-          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse " style="animation-duration: 3s;"  alt="">
-          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;"  alt="">
+          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
-          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
           <img src="/images/hero/heroimage2.webp" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
         </div>
@@ -238,13 +239,13 @@
         </div>
 
         <div class="relative">
-          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse " style="animation-duration: 3s;"  alt="">
-          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/World.svg" class="absolute -top-[6%] left-[24.47%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Data.svg" class="absolute top-[17.8%] left-[10.6%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;"  alt="">
+          <img src="/images/hero/Laptop.svg" class="absolute bottom-[21.5%] left-[11.59%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
-          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse " style="animation-duration: 3s;" alt="">
-          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse " style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Rocket.svg" class="absolute top-0 right-[17.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
+          <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
           <img src="/images/hero/heroimage.webp" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
         </div>
@@ -260,6 +261,6 @@
   </Carousel>
 </template>
 <script setup>
-import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import { Carousel, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 </script>
