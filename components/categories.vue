@@ -48,14 +48,15 @@
                     </div>
 
 
-                    <NuxtLink to="/categories/[slug].vue">
 
-                        <span v-if="currentTab === 'Govt Jobs'"
-                            class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
-
-                            <JobElement v-for="items in 24" />
-                        </span>
-                    </NuxtLink>
+                    <div v-if="currentTab === 'Govt Jobs'"
+                        class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
+                        <div v-for="(items, index) in apiData" :key="index">
+                            <NuxtLink :to="/categories/ +items.title ">
+                                <JobElement :title="items.title" :dated="items.test_date" :posts="items.posts" />
+                            </NuxtLink>
+                        </div>
+                    </div>
 
                     <p v-if="currentTab === 'University entrance'"
                         class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
@@ -66,13 +67,18 @@
         </section>
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            currentTab: 'Govt Jobs',
-            tabs: ['Govt Jobs', 'University entrance']
-        }
-    }
-}
+<script setup>
+import axios from 'axios';
+const currentTab = ref('Govt Jobs')
+const tabs = ref(['Govt Jobs', 'University entrance'])
+const apiData = ref([]);
+axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_JOBS`, {
+    method: "GET"
+
+}).then((response) => {
+    apiData.value = response.data;
+    console.log(response.data)
+}).catch((err) => {
+    console.log(err);
+});
 </script>

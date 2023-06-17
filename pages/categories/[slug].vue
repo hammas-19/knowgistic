@@ -15,7 +15,7 @@
 
                 <h1 class="lg:text-6xl md:text-3xl text-xl text-ebonyClay text-center font-semibold md:px-10 px-0">
                     Start with
-                    <span class="text-purplHeart"> FIA </span>
+                    <span class="text-purplHeart"> {{ $route.params.slug }} </span>
                     Today
                 </h1>
 
@@ -40,14 +40,14 @@
                         class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40">
 
                         <!-- Content -->
-                        <div v-for="items in 9">
-
-                            IB ACIO is a graduate-level examination conducted by the Ministry of Home Affairs (MHA) for the
+                        <div>
+                            
+                            <!-- IB ACIO is a graduate-level examination conducted by the Ministry of Home Affairs (MHA) for the
                             recruitment of Intelligence Bureau Assistant Central Intelligence Officer. An official IB ACIO
                             2022 notification has been released by the MHA through an employment advertisement to recruit
                             eligible candidates for the post of ACIO Grade-I & II/ Executive, JIO-I& II/ Executive, and
                             other posts. Going by the advertisement, a total of 766 vacancies are to be filled up through
-                            this recruitment drive. <br>
+                            this recruitment drive. <br> -->
 
                         </div>
 
@@ -83,15 +83,20 @@
     </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            currentTab: 'Details',
-            tabs: ['Details', 'prerequisite', 'Past papers']
-        }
-    }
-}
+<script setup>
+// import axios from 'axios';
+const tabs = ['Details', 'prerequisite', 'Past papers']
+const currentTab = ref('Details')
+// const apiData = ref([]);
+// axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_JOBS`, {
+//     method: "GET"
+
+// }).then((response) => {
+//     apiData.value = response.data;
+//     console.log(response.data)
+// }).catch((err) => {
+//     console.log(err);
+// });
 </script>
 
 <style scoped>
