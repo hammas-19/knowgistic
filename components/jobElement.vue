@@ -14,7 +14,7 @@
     
             </span>
             <span class="text-xs">
-                {{ props.dated }}
+               Test Date : {{ props.dated }}
     
             </span>
         </div>

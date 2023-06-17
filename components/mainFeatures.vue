@@ -23,78 +23,34 @@ progress[value]::-webkit-progress-bar {
                     {{ tab }}
                     <!-- <progress v-show="tab === currentTab" id="file" value="78" max="100"
                             class="h-[6px] absolute bottom-0  w-[97%] left-1"></progress> -->
-            </button>
+                </button>
 
-        </div>
-        <div class="w-full md:rounded-3xl rounded-lg">
+            </div>
+            <div class="w-full md:rounded-3xl rounded-lg">
 
-            <div v-if="currentTab === 'Smart Preparation'">
+                <div v-if="currentTab === 'Smart Preparation'">
 
-                <div class="flex items-center justify-around md:rounded-3xl rounded-lg overflow-hidden">
+                    <div class="flex items-center justify-around">
 
-                    <!-- <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
+                        <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
 
-                            <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
-                            <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
-                                    ipsum dolor</span>
-                                <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
-                                    volutpat diam
-                                    quis.
-                                </span>
+                    </div>
+                </div>
 
-                            </div>
-                            <span class="h-fit md:w-[40%] w-full">
-                                <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
-                            </span> -->
+                <div v-if="currentTab === 'User Dashboard'">
 
-                        <img src="/images/cta/feature.gif" class="max-h-96" alt="feature">
+                    <div class="flex items-center justify-around">
+
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZTNVnqV9RRbcQ_L12RNV3CQ_kAZdrJ4AFBruiLmAY6D5ixwZ94Ck2qQ4qm3KRiAsX_Hp6CCoFkkbyjejdSmTk5KnPB_HR9MR7L9nuYS5oSkUn_RgbekzC_3atOQ6lRCtw5duM1NwGSCw8RhCdpU3H0Kqi-m2FzkBAknTSXR5SQ_aX7lIDKtIyHmEX/s16000/userDashboard.gif"
+                            class="max-h-96 rounded-3xl" alt="feature">
 
                     </div>
 
                 </div>
 
-                <div v-if="currentTab === 'User Dashboard'">
+                <div v-if="currentTab === 'Lattest Patterns'">
 
-                    <div class="flex h-full md:flex-row-reverse flex-col-reverse items-center justify-between">
-
-                        <div
-                            class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
-
-                            <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
-                            <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
-                                ipsum dolor</span>
-                            <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
-                                volutpat diam
-                                quis.
-                            </span>
-
-                        </div>
-                        <span class="h-fit md:w-[40%] w-full">
-                            <img src="/walkingman-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
-                        </span>
-
-                </div>
-
-            </div>
-
-            <div v-if="currentTab === 'Lattest Patterns'">
-
-                <div class="flex items-center justify-around">
-
-                    <!-- <div class="p-5 flex flex-col w-full gap-3 text-center justify-center mx-auto md:h-[500px] h-[350px]">
-
-    <span class="text-purplHeart font-medium">Lorem ipsum dolor sit ipsum dolor</span>
-    <span class="lg:text-4xl text-2xl  font-bold text-ebonyClay">Lorem ipsum dolor sit
-            ipsum dolor</span>
-        <span class="text-comet text-xs">Lorem ipsum dolor sit amet consectetur. A lectus
-            volutpat diam
-            quis.
-        </span>
-
-    </div>
-    <span class="h-fit md:w-[40%] w-full">
-        <img src="/people-unscreen.gif" class="w-full h-full rounded-3xl object-cover" alt="">
-    </span> -->
+                    <div class="flex items-center justify-around">
 
                         <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
 

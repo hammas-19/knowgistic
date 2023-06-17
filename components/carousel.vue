@@ -92,8 +92,7 @@
 
 </style>
 <template>
-  <!-- :autoplay="2000" -->
-  <Carousel  :wrap-around="true" class="">
+  <Carousel :autoplay="2000"  :wrap-around="true" class="">
     <Slide class="lg:py-10 py-5">
 
       <div class="carousel__item px-2 flex lg:flex-row flex-col justify-center items-center gap-5 w-full lg:container">
