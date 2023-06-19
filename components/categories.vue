@@ -5,7 +5,7 @@
 </style>
 <template>
     <div>
-        <section class="bg-selago  lg:container lg:px-0 mx-auto rounded-3xl overflow-hidden">
+        <section class="bg-selago  lg:container lg:px-0 mx-auto rounded-lg overflow-hidden">
 
             <div class="lg:container mx-auto">
                 <div

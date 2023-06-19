@@ -57,7 +57,7 @@
 
         <PageBanner>
             <template #bannerImg>
-                <img src="/images/index_v2/Quizbg.png" class="h-full w-full absolute opacity-20 z-0 object-none" alt="">
+                <img src="/banners/banner9.png" class="h-full w-full absolute opacity-20 z-0 object-none" alt="">
             </template>
 
             <template #head>Let's Connect ...!</template>
@@ -69,7 +69,7 @@
     <section>
 
         <section
-            class="bg-selago py-10 bg-none md:bg-[url('/images/ContactUS/paperplaneBg.webp')] bg-scroll  bg-center bg-contain bg-no-repeat">
+            class="bg-selago py-10 bg-none md:bg-[url('/banners/banner9.png')] bg-scroll  bg-center bg-contain bg-no-repeat">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
 
                 <div

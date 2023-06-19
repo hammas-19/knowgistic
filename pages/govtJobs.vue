@@ -5,12 +5,10 @@
 
             <PageBanner>
                 <template #bannerImg>
-                    <img src="/images/index_v2/Quizbg.png" class="h-full w-full absolute opacity-20 z-0 object-none" alt="">
+                    <img src="/banners/banner9.png" class="h-full w-full absolute opacity-20 z-0 object-none" alt="">
                 </template>
 
-                <template #head>Job </template>
-
-                <template #foot> Exams </template>
+                <template #head>Let's Build Careers ..! </template>
 
             </PageBanner>
 
