@@ -8,9 +8,7 @@
                     <img src="/banners/banner9.png" class="h-full w-full absolute opacity-20 z-0 object-none" alt="">
                 </template>
 
-                <template #head>The Who, How & Why behind </template>
-
-                <template #foot>Masood</template>
+                <template #head>The Who, How & Why behind ... </template>
 
             </PageBanner>
 
@@ -31,25 +29,32 @@
                         class="md:block hidden  bg-[#9dc6ff] rounded-full absolute -bottom-12  right-[35%]" alt="World">
 
                     <span class="leading-10">
-                        My small business was using Email to keep up with support emails, and we were struggling. Email is
-                        built for communication, not collaboration. With four employees trying to use the same support email
-                        inbox, our team’s work was a huge burden to track. A ton of stuff was slipping through the cracks.
-                        <br>Our customers weren’t happy, and neither were we. So I looked for a better solution.
-                        Unfortunately, what I found was that the help desk software on the market was way more than our
-                        small business needed. Packed with features that I’d never use, the help desks I tried were all
-                        cluttered and overwhelming. <br>That’s why I started Groove. <br> Groove is the Shared Inbox for
-                        <br> small businesses looking for an alternative to Email. Organize all your support emails in one
-                        place, route them to the right people, and get more work done as a team. <br>No clutter. No
-                    complexity. No extra features to confuse and overwhelm you. I’m proud to say that Groove is the
-                    product that I wish existed back when I was looking for the perfect small business support software.
-                    And I’m also proud that our 2,000+ customers agree. <br>Whether you’re ready to move on from email,
-                    or you’re fed up with complicated help desk software, I hope you’ll give Groove a try. I’m confident
-                    that you’ll love it. <br> And if, for any reason, you don’t think that Groove is the best way for
-                    your small business to handle customer support — if it doesn’t make your team more productive and
-                    your customers happier — then you won’t pay a penny. <br>Give it a shot, and email me at
-                    alex@groovehq.com to let me know what you think. <br> CEO, Groove P.S. If you’d like to join
-                    250,000+ readers and learn more about our experiences as a small business — and get free lessons to
-                    help you on your own path to growth — check out the Groove blog.
+                        Dear Mockspot Community, <br>
+                        Welcome! As the anonymous founders of Mockspot, we're grateful that you've decided to take this
+                        journey with us. Our collective mission is straightforward yet profound: to revolutionize the way
+                        students prepare for government job exams and university tests. <br>
+                        We've all been students at one point in our lives, confronted with the challenge of sifting through
+                        unreliable or outdated resources in our quest for success. It's from these experiences that Mockspot
+                        was born. <br>
+                        Our platform is a product of passion, dedication, and a vision to create a comprehensive, reliable,
+                        and accessible hub for exam preparation. Mockspot is not just another educational website. Instead,
+                        we strive to provide an engaging learning environment through mock exams, customizable quizzes, and
+                        subject-based preparation tools. Our unique competitive feature allows you to invite friends and
+                        turn exam preparation into an exciting learning game. <br>
+                        We've leveraged modern technologies to create an intuitive, user-friendly platform that students can
+                        access anytime, anywhere. At Mockspot, our goal is not just to help you prepare but to make the
+                        process enjoyable, fostering a love for learning along the way. <br>
+                        While we remain anonymous, our commitment to you is transparent and unwavering. We believe that by
+                        maintaining a level of anonymity, we can ensure the focus remains on providing a quality learning
+                        experience, and not on individual recognition. <br>
+                        Your voice matters to us, and we value your feedback. As you delve into the world of Mockspot, we
+                        encourage you to share your experiences, suggestions, and thoughts with us. Your input will help us
+                        continually improve and innovate, offering a platform that truly meets your needs. <br>
+                        Thank you for embarking on this exciting journey with us. Together, let's redefine the future of
+                        exam preparation and unlock new educational possibilities. <br> <br>
+                    With Warm Regards, <br>
+                    The Founders Mockspot
+
                 </span>
 
             </div>
@@ -59,5 +64,4 @@
     </section>
 
 
-</div>
-</template>
+</div></template>

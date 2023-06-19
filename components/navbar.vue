@@ -139,20 +139,8 @@ const isOpenBurgerMenu = ref(false);
 
 const NavbarLink = [
     {
-        name: "home",
-        href: "/",
-    },
-    {
-        name: "Old-home",
-        href: "/home",
-    },
-    {
-        name: "courses",
-        href: "/courses",
-    },
-    {
-        name: "profile",
-        href: "/profile/userProfile",
+        name: "profile view",
+        href: "/userDashboard/[slug]",
     },
     {
         name: "Contact Us",

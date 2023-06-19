@@ -60,9 +60,7 @@
                 <img src="/images/index_v2/Quizbg.png" class="h-full w-full absolute opacity-20 z-0 object-none" alt="">
             </template>
 
-            <template #head>Contact Us</template>
-
-            <template #foot>Masood</template>
+            <template #head>Let's Connect ...!</template>
 
         </PageBanner>
 
@@ -85,12 +83,12 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
-                                <p class="mt-6 text-lg font-medium text-gray-900">+1-316-555-0116</p>
-                                <p class="mt-1 text-lg font-medium text-gray-900">+1-446-526-0117</p>
+                                <p class="mt-6 text-lg font-medium text-gray-900">+92 316 2411434</p>
+                                <p class="mt-1 text-lg font-medium text-gray-900">+92 316 2411434</p>
                             </div>
                         </div>
 
-                        <div class="overflow-hidden rounded-xl">
+                        <div class="rounded-xl">
                             <div class="p-6">
                                 <svg class="flex-shrink-0 w-10 h-10 mx-auto text-purplHeart"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -98,8 +96,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                <p class="mt-6 text-lg font-medium text-gray-900">contact@example.com</p>
-                                <p class="mt-1 text-lg font-medium text-gray-900">hr@example.com</p>
+                                <p class="mt-6 text-lg font-medium text-gray-900">hammasmasoood@gmail.com</p>
                             </div>
                         </div>
 
@@ -113,8 +110,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                <p class="mt-6 text-lg font-medium leading-relaxed text-gray-900">8502 Preston Rd.
-                                    Ingle, Maine 98380, USA</p>
+                                <p class="mt-6 text-lg font-medium leading-relaxed text-gray-900">Karachi, Sindh-PK</p>
                             </div>
                         </div>
                     </div>
