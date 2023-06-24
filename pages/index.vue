@@ -26,7 +26,7 @@
                 </span>
 
             </div>
-            <div class="py-16 px-2">
+            <div class="py-16 lg:px-0 px-2">
 
                 <Categories />
 
