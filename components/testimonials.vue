@@ -13,12 +13,7 @@
 }
 
 .reverse {
-    /* flex: 0 0 auto; */
     z-index: 1;
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center; */
     animation: marqueescrollR 60s linear 0s infinite alternate-reverse;
     animation-play-state: running;
     animation-delay: 0s;
@@ -84,7 +79,7 @@
         <div class="wrapper grid grid-cols-2 w-max md:gap-5 gap-2 hover:overflow-y-scroll h-full overflow-hidden relative">
 
             <!-- fading divs -->
-            <div class="absolute w-full h-12 -top-1 rotate-180 z-20 bg-cardFade">
+            <div class="absolute w-full h-20 -top-1 rotate-180 z-20 bg-cardFade">
             </div>
             <div class="marquee grid grid-cols-1 md:gap-5 gap-2">
 

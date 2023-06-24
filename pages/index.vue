@@ -55,18 +55,14 @@
         <!-- CTA -->
         <section>
             <div class="py-16 mt-32 md:mt-0 bg-whiteLilac">
-
                 <Cta />
-
             </div>
         </section>
 
 
         <!-- Testimonials -->
         <section class="bg-whiteLilac relative">
-
             <Testimonials />
-
         </section>
 
 

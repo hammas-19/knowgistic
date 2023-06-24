@@ -32,7 +32,7 @@ progress[value]::-webkit-progress-bar {
 
                     <div class="flex items-center justify-around">
 
-                        <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
+                        <img src="/images/cta/feature.gif" class="max-h-96 md:rounded-3xl rounded-lg" alt="feature">
 
                     </div>
                 </div>
@@ -42,7 +42,7 @@ progress[value]::-webkit-progress-bar {
                     <div class="flex items-center justify-around">
 
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZTNVnqV9RRbcQ_L12RNV3CQ_kAZdrJ4AFBruiLmAY6D5ixwZ94Ck2qQ4qm3KRiAsX_Hp6CCoFkkbyjejdSmTk5KnPB_HR9MR7L9nuYS5oSkUn_RgbekzC_3atOQ6lRCtw5duM1NwGSCw8RhCdpU3H0Kqi-m2FzkBAknTSXR5SQ_aX7lIDKtIyHmEX/s16000/userDashboard.gif"
-                            class="max-h-96 rounded-3xl" alt="feature">
+                            class="max-h-96 md:rounded-3xl rounded-lg" alt="feature">
 
                     </div>
 
@@ -52,7 +52,7 @@ progress[value]::-webkit-progress-bar {
 
                     <div class="flex items-center justify-around">
 
-                        <img src="/images/cta/feature.gif" class="max-h-96 rounded-3xl" alt="feature">
+                        <img src="/images/cta/feature.gif" class="max-h-96 md:rounded-3xl rounded-lg" alt="feature">
 
                     </div>
 
