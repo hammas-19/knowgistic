@@ -34,7 +34,7 @@
         </section>
 
         <!-- Stats -->
-        <section class="">
+        <section class="py-16 bg-selago">
 
             <Stats />
 
@@ -42,7 +42,7 @@
 
         <!-- Feature -->
         <section>
-            <div class="md:pb-32 pb-0">
+            <div class="md:py-32 py-0">
 
                 <!-- Typo/Info -->
 
