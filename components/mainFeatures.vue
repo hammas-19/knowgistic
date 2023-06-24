@@ -19,10 +19,8 @@ progress[value]::-webkit-progress-bar {
             <div class="flex items-center justify-center gap-5 w-full">
                 <button v-for="tab in tabs" :key="tab"
                     class="text-comet md:p-2 p-2 font-medium md:text-base text-xs md:rounded-3xl rounded-lg transition-all opacity-30"
-                    :class="{ 'text-[#fff] bg-[#5F30E2] opacity-100': currentTab === tab }" @click="currentTab = tab">
+                    :class="{ 'text-[#ffffff] bg-[#5F30E2] opacity-100': currentTab === tab }" @click="currentTab = tab">
                     {{ tab }}
-                    <!-- <progress v-show="tab === currentTab" id="file" value="78" max="100"
-                            class="h-[6px] absolute bottom-0  w-[97%] left-1"></progress> -->
                 </button>
 
             </div>
