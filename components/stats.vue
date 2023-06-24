@@ -4,7 +4,7 @@
             Our Journey so far has,
         </h2>
         <div class="flex flex-wrap gap-10 justify-center">
-            <div class="rounded-3xl flex flex-col justify-between gap-3 w-[240px] bg-[#d9f5fffa]">
+            <div class="rounded-3xl flex flex-col justify-between gap-3 w-[240px] shadow-lg bg-[#d9f5fffa]">
                 <div class="py-2 px-5 text-comet">
                     <h4 class="font-semibold text-3xl">
                         2000
@@ -17,7 +17,7 @@
                     <img src="/images/stats/analysis.svg" class="opacity-70" alt="">
                 </span>
             </div>
-            <div class="rounded-3xl flex flex-col justify-between gap-3 w-[240px] bg-[#e7ffd1]">
+            <div class="rounded-3xl flex flex-col justify-between gap-3 w-[240px] shadow-lg bg-[#e7ffd1]">
                 <div class="py-2 px-5 text-comet">
                     <h4 class="font-semibold text-3xl">
                         2000
@@ -30,7 +30,7 @@
                     <img src="/images/stats/pie-chart.svg" class="opacity-70" alt="">
                 </span>
             </div>
-            <div class="rounded-3xl flex flex-col justify-between gap-3 w-[240px] bg-[#ffead1ed]">
+            <div class="rounded-3xl flex flex-col justify-between gap-3 w-[240px] shadow-lg bg-[#ffead1ed]">
                 <div class="py-2 px-5 text-comet">
                     <h4 class="font-semibold text-3xl">
                         2000
