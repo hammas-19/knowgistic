@@ -36,7 +36,7 @@
 
             <div class="Info relative py-4 md:h-[calc(100vh-400px)] h-[calc(100vh-200px)] max-w-7xl mx-auto lg:overflow-y-scroll overflow-y-hidden">
 
-
+                <Transition>
                 <div class="flex justify-center absolute md:bottom-5 bottom-2 w-full lg:hidden">
                     <!-- Govt Jobs -->
                     <NuxtLink v-show="currentTab === 'Govt Jobs'" to="/govtJobs">
@@ -56,7 +56,7 @@
 
                     </NuxtLink>
                 </div>
-
+            </Transition>
 
                 <Transition>
                     <div v-if="currentTab === 'Govt Jobs'"
