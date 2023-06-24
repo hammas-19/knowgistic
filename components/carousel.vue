@@ -122,8 +122,7 @@
 
 
           <p>
-            Lorem ipsum dolor sit amet consectetur. Quam tellus fusce dolor sed eget at facilisis erat nisl. Aliquet
-            tellus vitae pulvinar consectetur in congue viverra nulla.
+            Step up your game with our smart exam preparation strategies. Prepare efficiently, study effectively, and outsmart your exams.
           </p>
           <span class="px-4 py-2 text-center font-medium text-sm rounded-md text-white bg-midHeart">Start
             Journey</span>
@@ -176,8 +175,7 @@
 
 
           <p>
-            Lorem ipsum dolor sit amet consectetur. Quam tellus fusce dolor sed eget at facilisis erat nisl. Aliquet
-            tellus vitae pulvinar consectetur in congue viverra nulla.
+            No more stumbling blocks on your exam journey. With our seamless preparation, you'll confidently whiz through exams and achieve greatness.
           </p>
           <span class="px-4 py-2 text-center font-medium text-sm rounded-md text-white bg-midHeart">Start
             Journey</span>
@@ -229,8 +227,7 @@
 
 
           <p>
-            Lorem ipsum dolor sit amet consectetur. Quam tellus fusce dolor sed eget at facilisis erat nisl. Aliquet
-            tellus vitae pulvinar consectetur in congue viverra nulla.
+            Ignite your exam performance with our energizing approach. Embrace the thrill of learning and power through exams with renewed energy.
           </p>
           <span class="px-4 py-2 text-center font-medium text-sm rounded-md text-white bg-midHeart">Start
             Journey</span>
