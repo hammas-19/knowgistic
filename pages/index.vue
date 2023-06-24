@@ -63,7 +63,7 @@
 
 
         <!-- Testimonials -->
-        <section class=" pt-16 bg-selago relative">
+        <section class="bg-whiteLilac relative">
 
             <Testimonials />
 
