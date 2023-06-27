@@ -62,7 +62,7 @@
                     <div v-if="currentTab === 'Govt Jobs'"
                         class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
                         <div v-for="(items, index) in apiData" :key="index">
-                            <NuxtLink :to="/categories/ + items.title">
+                            <NuxtLink :to="/categories/ + items.id">
                                 <JobElement :title="items.title" :dated="items.test_date" :posts="items.posts" />
                             </NuxtLink>
                         </div>

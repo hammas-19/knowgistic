@@ -15,7 +15,7 @@
 
                 <h1 class="lg:text-6xl md:text-3xl text-xl text-ebonyClay text-center font-semibold md:px-10 px-0">
                     Start with
-                    <span class="text-purplHeart"> {{ $route.params.slug }} </span>
+                    <span class="text-purplHeart"> {{ $route.params.id }} </span>
                     Today
                 </h1>
 
@@ -84,19 +84,20 @@
 </template>
 
 <script setup>
-// import axios from 'axios';
+import axios from 'axios';
+const route = useRoute();
 const tabs = ['Details', 'prerequisite', 'Past papers']
 const currentTab = ref('Details')
-// const apiData = ref([]);
-// axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_JOBS`, {
-//     method: "GET"
+const apiData = ref([]);
+axios(`https://primepackages.info/moc_api/api.php?api_type=GET_JOB_ALL_DETAILS&job_id=${route.params.id}`, {
+    method: "GET"
 
-// }).then((response) => {
-//     apiData.value = response.data;
-//     console.log(response.data)
-// }).catch((err) => {
-//     console.log(err);
-// });
+}).then((response) => {
+    apiData.value = response.data;
+    console.log(response.data)
+}).catch((err) => {
+    console.log(err);
+});
 </script>
 
 <style scoped>
