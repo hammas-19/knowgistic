@@ -74,6 +74,12 @@
                         <UniElement v-for="items in 12" />
                     </p>
                 </Transition>
+                <Transition>
+                    <p v-if="currentTab === 'Subject-wise'"
+                        class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
+                        <UniElement v-for="items in 12" />
+                    </p>
+                </Transition>
             </div>
         </section>
     </div>
@@ -81,7 +87,7 @@
 <script setup>
 import axios from 'axios';
 const currentTab = ref('Govt Jobs')
-const tabs = ref(['Govt Jobs', 'University entrance'])
+const tabs = ref(['Govt Jobs', 'University entrance' , 'Subject-wise'])
 const apiData = ref([]);
 axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_JOBS`, {
     method: "GET"
