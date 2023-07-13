@@ -4,7 +4,7 @@
 }
 </style>
 <template>
-    <div>
+    <div v-for="(items, index) in apiData" :key="index">
 
         <section class=" hero bg-center bg-no-repeat ">
             <div class="lg:container mx-auto py-8 px-2 flex flex-col justify-center items-center md:gap-10 gap-5">
@@ -15,7 +15,7 @@
 
                 <h1 class="lg:text-6xl md:text-3xl text-xl text-ebonyClay text-center font-semibold md:px-10 px-0">
                     Start with
-                    <span class="text-purplHeart"> {{ $route.params.id }} </span>
+                    <span class="text-purplHeart"> {{ items.title }} </span>
                     Today
                 </h1>
 
@@ -48,7 +48,13 @@
                             eligible candidates for the post of ACIO Grade-I & II/ Executive, JIO-I& II/ Executive, and
                             other posts. Going by the advertisement, a total of 766 vacancies are to be filled up through
                             this recruitment drive. <br> -->
+                            {{ items.title }} <br>
 
+                            <span v-for="list in items.past_paper">
+
+                                {{ list }} <br>
+                            </span> <br> <br>
+                            {{ items.prerequisite }}
                         </div>
 
                         <!-- Extras -->
@@ -71,7 +77,7 @@
                     <!-- tab3 content -->
                     <div v-if="currentTab === 'Past papers'"
                         class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40 pl-3">
-                        
+                            
                         <CategoryPastPaperEl/>
 
                     </div>
@@ -85,6 +91,7 @@
 
 <script setup>
 import axios from 'axios';
+import { list } from 'postcss';
 const route = useRoute();
 const tabs = ['Details', 'prerequisite', 'Past papers']
 const currentTab = ref('Details')
