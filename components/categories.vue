@@ -77,7 +77,7 @@
                 <Transition>
                     <p v-if="currentTab === 'Subject-wise'"
                         class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
-                        <UniElement v-for="items in 12" />
+                        <TestCard v-for="items in 20"  />
                     </p>
                 </Transition>
             </div>
