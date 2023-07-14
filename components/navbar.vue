@@ -110,7 +110,7 @@ input:checked+div span.line-2 {
                 class="absolute inset-x-0 justify-center z-20 w-full grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 bg-selago lg:p-0 top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
                 <div class="flex flex-col lg:flex-row gap-6 items-center lg:justify-between justify-center w-full">
                     <NuxtLink to="/">
-                        <img src="/Logo.svg" class="w-fit self-center md:self-auto py-1" alt="Logo">
+                        <img src="/LogoBlack.svg" class="w-[240px] self-center md:self-auto py-1" alt="Logo">
                     </NuxtLink>
                     <span class=" w-full flex md:flex-row flex-col  justify-center">
                         <NuxtLink v-for="(navLink, index) in NavbarLink" :to="navLink.href" :key="index"
