@@ -15,12 +15,12 @@ export default defineNuxtConfig(
 		app: {
 			head: {
 				title:
-					"Job assist",
+					"KnowGistic",
 				link: [
 					{
 						rel: "icon",
 						type: "image/svg+xml",
-						href: "/favicon.ico",
+						href: "/logoIcon.svg",
 					},
 				],
 			},
