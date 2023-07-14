@@ -3,7 +3,7 @@
         <div class="container px-6 py-8 mx-auto bg-alabaster rounded-t-3xl">
             <div class="text-center">
                 <span class="flex justify-center">
-                    <img src="/Logo.svg" class="w-40" alt="Logo">
+                    <img src="/LogoBlack.svg" class="w-40" alt="Logo">
                 </span>
 
                 <div class="flex flex-wrap justify-center mt-5 -mx-4">

@@ -71,13 +71,13 @@
                 <Transition>
                     <p v-if="currentTab === 'University entrance'"
                         class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
-                        <UniElement v-for="items in 12" />
+                        <JobCourseCard v-for="items in 12" />
                     </p>
                 </Transition>
                 <Transition>
                     <p v-if="currentTab === 'Subject-wise'"
-                        class="flex flex-wrap md:gap-10 gap-2 items-center justify-center">
-                        <TestCard v-for="items in 20"  />
+                        class="flex flex-wrap md:gap-10 gap-2 items-center justify-around">
+                        <ShowCard  />
                     </p>
                 </Transition>
             </div>
@@ -86,6 +86,7 @@
 </template>
 <script setup>
 import axios from 'axios';
+import JobCourseCard from './jobCourseCard.vue';
 const currentTab = ref('Govt Jobs')
 const tabs = ref(['Govt Jobs', 'University entrance' , 'Subject-wise'])
 const apiData = ref([]);

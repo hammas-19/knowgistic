@@ -243,7 +243,7 @@
           <img src="/images/hero/Message.svg" class="absolute top-[24%] right-[9.8%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
           <img src="/images/hero/Football.svg" class="absolute bottom-[23%] right-[11.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;" alt="">
 
-          <img src="/images/hero/heroimage.webp" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
+          <img src="/images/hero/Exam-Boy.png" class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
         </div>
 
 
