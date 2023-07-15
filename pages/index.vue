@@ -16,19 +16,10 @@
 
         <!-- Categories -->
         <section>
-            <div class="md:pt-20 pt-10 flex flex-col gap-3 justify-center items-center text-center px-2">
-
-                <h1 class="md:text-4xl text-xl text-ebonyClay font-semibold">
-                    Current Exams
-                </h1>
-                <span class="text-ebonyClay text-sm">
-                    Followings are exams that are currently active for candidates preparation
-                </span>
-
-            </div>
             <div class="py-16 lg:px-0 px-2">
 
-                <Categories />
+                <!-- <Categories /> -->
+                <TestCats />
 
             </div>
         </section>
