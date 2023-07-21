@@ -35,7 +35,7 @@
         <!-- Job Preparation -->
         <div class=" ">
             <div
-                class=" text-ebonyClay py-8 bg-[url('/banners/bannerlight.png')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
+                class=" text-ebonyClay py-8 bg-[url('/images/categories/sectionBannerBg2.svg')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
                 <div class="mx-2 p-2 bg-selago w-fit rounded-lg shadow-md border border-whiteLilac">
 
                     <h3 class="text-lg font-semibold pb-2">
@@ -58,7 +58,7 @@
         <!-- Subject-wise Preparation -->
         <div class=" ">
             <div
-                class=" text-ebonyClay py-8 bg-[url('/banners/bannerlight.png')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
+                class=" text-ebonyClay py-8 bg-[url('/images/categories/sectionBannerBg1.svg')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
                 <div class="mx-2 p-2 bg-selago w-fit rounded-lg shadow-md border border-whiteLilac">
 
                     <h3 class="text-lg font-semibold pb-2">
