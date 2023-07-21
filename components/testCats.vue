@@ -34,7 +34,8 @@
         </div>
         <!-- Job Preparation -->
         <div class=" ">
-            <div class=" text-ebonyClay py-8 bg-[url('/banners/bannerlight.png')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
+            <div
+                class=" text-ebonyClay py-8 bg-[url('/banners/bannerlight.png')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
                 <div class="mx-2 p-2 bg-selago w-fit rounded-lg shadow-md border border-whiteLilac">
 
                     <h3 class="text-lg font-semibold pb-2">
@@ -55,27 +56,32 @@
             </div>
         </div>
         <!-- Subject-wise Preparation -->
-            <div class=" ">
-                <div class=" text-ebonyClay py-8 bg-[url('/banners/bannerlight.png')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
-                    <div class="mx-2 p-2 bg-selago w-fit rounded-lg shadow-md border border-whiteLilac">
+        <div class=" ">
+            <div
+                class=" text-ebonyClay py-8 bg-[url('/banners/bannerlight.png')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
+                <div class="mx-2 p-2 bg-selago w-fit rounded-lg shadow-md border border-whiteLilac">
 
-                        <h3 class="text-lg font-semibold pb-2">
-                            Subject-wise preparation
-                        </h3>
-                        <p class="text-sm text-comet">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eligendi laborum, quo v
-                        </p>
-                    </div>
+                    <h3 class="text-lg font-semibold pb-2">
+                        Subject-wise preparation
+                    </h3>
+                    <p class="text-sm text-comet">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eligendi laborum, quo v
+                    </p>
                 </div>
-                <div
-                    class="window bg-selago rounded-xl p-2 flex flex-wrap md:gap-10 gap-2 items-center justify-center max-h-[656px] overflow-y-scroll">
-                    <div v-for="(items, index) in apiData" :key="index" class="">
+            </div>
+            <div
+                class="window bg-selago rounded-xl p-2 flex flex-wrap md:gap-10 gap-2 items-center justify-around max-h-[656px] overflow-y-scroll">
+                <!-- <div v-for="(items, index) in apiData" :key="index" class="">
                         <NuxtLink :to="/categories/ + items.id" class="">
                             <JobElement :title="items.title" :dated="items.test_date" :posts="items.posts" />
                         </NuxtLink>
-                    </div>
+                    </div> -->
+                <div v-for="(items, index) in courseData">
+
+                    <ShowCard :key="index" :image="items.image" :name="items.from" />
                 </div>
             </div>
+        </div>
     </div>
 </template>
 <script setup>
@@ -90,4 +96,50 @@ axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_JOBS`, {
 }).catch((err) => {
     console.log(err);
 });
+const courseData = [
+    {
+        image: '/images/subjectImages/GeneralKnowledge.png',
+        from: 'General Knowledge'
+    },
+    {
+        image: '/images/subjectImages/analytics.png',
+        from: 'Analytical Problems'
+    },
+    {
+        image: '/images/subjectImages/GeneralKnowledge.png',
+        from: 'Current Affairs'
+    },
+    {
+        image: '/images/subjectImages/ComputerScience.png',
+        from: 'Computer Studies'
+    },
+    {
+        image: '/images/subjectImages/English.png',
+        from: 'English'
+    },
+    {
+        image: '/images/subjectImages/Islamiyat.png',
+        from: 'Islamic Studies'
+    },
+    {
+        image: '/images/subjectImages/Mathematics.png',
+        from: 'Maths'
+    },
+    {
+        image: '/images/subjectImages/GeneralKnowledge.png',
+        from: 'Professionalism'
+    },
+    {
+        image: '/images/subjectImages/Science.png',
+        from: 'General Science'
+    },
+    {
+        image: '/images/subjectImages/Urdu.png',
+        from: 'Sindhi'
+    },
+    {
+        image: '/images/subjectImages/Urdu.png',
+        from: 'Urdu'
+    }
+]
 </script>

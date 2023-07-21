@@ -73,7 +73,7 @@ input:checked+div span.line-2 {
                 <!-- Mobile menu -->
                 <div class="flex lg:hidden">
                     <NuxtLink to="/">
-                        <img v-show="!isOpenBurgerMenu" src="/Logo.svg" class="w-fit absolute left-0 -top-5" alt="">
+                        <img v-show="!isOpenBurgerMenu" src="/LogoBlack.svg" class="w-[240px] absolute left-0 -top-8" alt="">
                     </NuxtLink>
 
 
