@@ -4,8 +4,13 @@
         <!-- Hero -->
         <section class=" m:py-8 py-3">
 
-            <Carousel />
+            <!-- <Carousel /> -->
         </section>
+
+                <section class=" m:py-8 py-3">
+
+                <NewHero />
+            </section>
 
         <!-- Why Choose Us -->
         <section>
