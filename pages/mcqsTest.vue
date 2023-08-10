@@ -126,9 +126,6 @@ axios(`https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
 
 }).then((response) => {
     apiData.value = response.data.results;
-    // console.log(response.data.results)
 }).catch((err) => {
-    console.log(err);
 });
-// console.log(apiData.value[0]);
 </script>

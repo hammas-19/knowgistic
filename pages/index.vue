@@ -2,11 +2,6 @@
     <div>
 
         <!-- Hero -->
-        <section class=" m:py-8 py-3">
-
-            <!-- <Carousel /> -->
-        </section>
-
                 <section class=" m:py-8 py-3">
 
                 <NewHero />

@@ -125,10 +125,8 @@ axios(`https://induspublic.info/moc_api/api.php`, {
     }
 
 }).then((response) => {
-    console.log(response.data)
     apiData.value = response.data
 }).catch((err) => {
-    console.log(err);
 });
 
 </script>

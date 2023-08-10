@@ -139,8 +139,6 @@ axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_TESTIMONIALS`
 
 }).then((response) => {
     apiData.value = response.data;
-    console.log(response.data)
 }).catch((err) => {
-    console.log(err);
 });
 </script>

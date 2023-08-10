@@ -318,8 +318,6 @@ const mockOptions = mockData.map(el => el.name)
 const subjectOptions = ref([])
 
 function handleMockValue() {
-    console.log("working")
-    console.log(mockData.find((el) => el.name == selectedMock.value)?.data)
     subjectOptions.value = mockData.find((el) => el.name == selectedMock.value)?.data
 }
 </script>
