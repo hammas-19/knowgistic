@@ -112,7 +112,7 @@ input:checked+div span.line-2 {
                     <NuxtLink to="/">
                         <img src="/LogoBlack.svg" class="w-[240px] self-center md:self-auto py-1" alt="Logo">
                     </NuxtLink>
-                    <span class=" w-full flex md:flex-row flex-col  justify-center">
+                    <span class=" w-full flex md:flex-row flex-col items-center gap-2 md:gap-0 justify-center">
                         <NuxtLink v-for="(navLink, index) in NavbarLink" :to="navLink.href" :key="index"
                             @click="isOpenBurgerMenu = !isOpenBurgerMenu"
                             :active-class="'text-[#5F30E2] border-t-4  border-[#A0D4A1]'"
@@ -121,7 +121,7 @@ input:checked+div span.line-2 {
                         </NuxtLink>
                     </span>
 
-                    <div class="flex gap-5 md:self-auto self-end">
+                    <div class="flex gap-5">
                         <NuxtLink to="/auth/login"
                             class="px-4 py-2 text-center font-medium text-sm rounded-md text-purplHeart border border-purplHeart cursor-pointer hover:bg-purplHeart hover:text-white transition-all">
                             Login</NuxtLink>

@@ -8,11 +8,11 @@
             </section>
 
         <!-- Why Choose Us -->
-        <section>
+        <!-- <section>
             <div>
                 <WhyUs />
             </div>
-        </section>
+        </section> -->
 
         <!-- Categories -->
         <section>
