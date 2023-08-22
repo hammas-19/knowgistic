@@ -43,8 +43,8 @@
   <div class="grid lg:grid-cols-2 grid-cols-1 gap-2">
     <div class="flex flex-col justify-between gap-6 lg:gap-12 h-3/4">
       <!-- TYPO SLIDER -->
-      <div class="">
-        <Carousel :autoplay="2000" :wrap-around="true" dir="rtl">
+      <div class="md:py-8 py-3">
+        <Carousel :autoplay="4000" :wrap-around="true" dir="rtl">
           <Slide class="">
             <div class="carousel__item px-2 w-full lg:container !h-full self-center">
               <div class="max-w-[475px] w-fit px-5 flex flex-col gap-5 items-end text-left mx-auto  self-center h-4/6">
@@ -153,7 +153,7 @@
     </div>
     <!-- Image SLIDER -->
     <div class="">
-      <Carousel :autoplay="2000" :wrap-around="true" class="">
+      <Carousel :autoplay="4000" :wrap-around="true" class="">
         <Slide class="">
 
           <div

@@ -2,7 +2,7 @@
     <div>
 
         <!-- Hero -->
-                <section class=" m:py-8 py-3">
+                <section>
 
                 <NewHero />
             </section>
@@ -32,16 +32,16 @@
         </section>
 
         <!-- Feature -->
-        <section>
+        <!-- <section>
             <div class="md:py-32 py-0">
 
-                <!-- Typo/Info -->
+                // Typo/Info 
 
-                <!-- Feature Tabs -->
+                // Feature Tabs 
                 <MainFeatures />
 
             </div>
-        </section>
+        </section> -->
 
         <!-- CTA -->
         <section>
