@@ -134,7 +134,7 @@
 <script setup>
 import axios from 'axios';
 const apiData = ref([]);
-axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_TESTIMONIALS`, {
+axios(`https://dsystem.one/moc_api/api.php?api_type=GET_ALL_TESTIMONIALS`, {
     method: "GET"
 
 }).then((response) => {

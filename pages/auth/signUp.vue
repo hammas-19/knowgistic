@@ -114,7 +114,7 @@ definePageMeta({
 
 const apiData = ref();
 
-axios(`https://induspublic.info/moc_api/api.php`, {
+axios(`https://dsystem.one/moc_api/api.php`, {
     method: "POST",
     headers: {
         'Content-Type': 'application/json'

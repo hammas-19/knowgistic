@@ -96,7 +96,7 @@ const route = useRoute();
 const tabs = ['Details', 'prerequisite', 'Past papers']
 const currentTab = ref('Details')
 const apiData = ref([]);
-axios(`https://primepackages.info/moc_api/api.php?api_type=GET_JOB_ALL_DETAILS&job_id=${route.params.id}`, {
+axios(`https://dsystem.one/moc_api/api.php?api_type=GET_JOB_ALL_DETAILS&job_id=${route.params.id}`, {
     method: "GET"
 
 }).then((response) => {

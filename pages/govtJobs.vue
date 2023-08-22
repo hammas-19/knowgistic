@@ -30,7 +30,7 @@
 <script setup>
 import axios from 'axios';
 const apiData = ref([]);
-axios(`https://primepackages.info/moc_api/api.php?api_type=GET_ALL_JOBS`, {
+axios(`https://dsystem.one/moc_api/api.php?api_type=GET_ALL_JOBS`, {
     method: "GET"
 
 }).then((response) => {
