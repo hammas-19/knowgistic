@@ -138,7 +138,7 @@
           <span class="text-sm text-comet px-3 py-1 bg-selago border border-whiteLilac rounded-md md:-top-3 -top-5 absolute">
             Why Choose Us?
           </span>
-          <div class="grid md:grid-cols-4 justify-items-center grid-cols-2 md:gap-2 gap-5">
+          <div class="grid md:grid-cols-3 justify-items-center grid-cols-2 md:gap-2 gap-5">
             <div v-for="(items, index) in whyUsData" :key="index"
               class="self-center min-w-[140px] flex flex-col gap-1 items-center justify-between">
               <img :src="items.img" class="md:max-w-[70px] max-w-[40px] h-fit" :alt="items.title">
@@ -244,13 +244,7 @@ import { Carousel, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 const whyUsData = [
   {
-    title: "Lattest pattern tests",
-    img: '/banners/certificate.svg',
-    tab: '1',
-    content: "Stay up-to-date with exam formats.",
-  },
-  {
-    title: "Mock Exams",
+    title: "Custom Mocks",
     img: '/banners/online-education-app.png',
     tab: '2',
     content: "Practice with simulated exams",

@@ -1,38 +1,28 @@
 <template>
-    <div>
+   <div>
 
-        <!-- Hero -->
-                <section>
+      <!-- Hero -->
+      <section>
+         <NewHero />
+      </section>
+      <!-- Categories -->
+      <section>
+         <div class="py-16 lg:px-0 px-2">
+            <!-- <Categories /> -->
+            <IndexCategoriesSection />
 
-                <NewHero />
-            </section>
+         </div>
+      </section>
 
-        <!-- Why Choose Us -->
-        <!-- <section>
-            <div>
-                <WhyUs />
-            </div>
-        </section> -->
+      <!-- Stats -->
+      <section class="py-16 bg-selago">
 
-        <!-- Categories -->
-        <section>
-            <div class="py-16 lg:px-0 px-2">
+         <Stats />
 
-                <!-- <Categories /> -->
-                <TestCats />
+      </section>
 
-            </div>
-        </section>
-
-        <!-- Stats -->
-        <section class="py-16 bg-selago">
-
-            <Stats />
-
-        </section>
-
-        <!-- Feature -->
-        <!-- <section>
+      <!-- Feature -->
+      <!-- <section>
             <div class="md:py-32 py-0">
 
                 // Typo/Info 
@@ -43,19 +33,19 @@
             </div>
         </section> -->
 
-        <!-- CTA -->
-        <section>
-            <div class="py-16 mt-32 md:mt-0 bg-whiteLilac">
-                <Cta />
-            </div>
-        </section>
+      <!-- CTA -->
+      <section>
+         <div class="py-16 mt-32 md:mt-0 bg-whiteLilac">
+            <Cta />
+         </div>
+      </section>
 
 
-        <!-- Testimonials -->
-        <section class="bg-whiteLilac relative">
-            <Testimonials />
-        </section>
+      <!-- Testimonials -->
+      <section class="bg-whiteLilac relative">
+         <Testimonials />
+      </section>
 
 
-    </div>
+   </div>
 </template>
