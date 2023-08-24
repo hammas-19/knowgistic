@@ -244,16 +244,16 @@ import { Carousel, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 const whyUsData = [
   {
-    title: "Custom Mocks",
+    title: "Mock exams",
     img: '/banners/online-education-app.png',
     tab: '2',
     content: "Practice with simulated exams",
   },
   {
-    title: "Past papers",
-    img: '/banners/certificate.svg',
-    tab: '3',
-    content: "Review and analyze previous exams",
+    title: "Custom Mocks",
+    img: '/banners/online-education-app.png',
+    tab: '2',
+    content: "Practice with simulated exams",
   },
   {
     title: "Subject-wise Preps",
