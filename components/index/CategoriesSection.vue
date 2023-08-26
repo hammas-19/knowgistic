@@ -1,24 +1,5 @@
 <style scoped>
-* {
-  scroll-behavior: smooth;
-}
 
-.window::-webkit-scrollbar-track {
-  background-color: #f0ecfd;
-
-}
-
-.window::-webkit-scrollbar {
-  width: 4px;
-  background-color: #F5F5F5;
-}
-
-.window::-webkit-scrollbar-thumb {
-  background-color: #dedde4;
-  background-image: -webkit-linear-gradient(90deg,
-      #b9b9b9 25%,
-      transparent 100%)
-}
 </style>
 <template>
   <div class="max-w-7xl mx-auto px-2 flex flex-col gap-16">
@@ -134,7 +115,7 @@
 
         </div>
         <span class="md:w-1/3 w-full flex justify-center">
-          <NuxtLink to="/auth/signUp">
+          <NuxtLink to="/Cats/subject-wise-exams">
             <ButtonFancy class="px-3 py-2 text-ebonyClay text-base">
               <template #text>
                 Get started

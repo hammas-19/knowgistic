@@ -17,32 +17,24 @@
     </section>
     <section>
       <div class="mx-auto px-2 py-2 md:py-10 max-w-7xl">
-        <div class="flex justify-between md:gap-8 gap-3 py-8 w-full overflow-x-scroll px-10">
-          <button v-for="tab in tabs" :key="tab"
+        <div class="window flex justify-between md:gap-8 gap-3 py-8 w-full overflow-x-scroll px-10 whitespace-nowrap">
+          <button v-for="tab, index in apiData" :key="index"
             class="text-ebonyClay !text-sm !w-full md:text-lg px-2 transition-all py-1 font-semibold rounded-xl bg-selago border"
             :class="{ 'bg-[#5F30E2] text-[#fff] border-nectarine': currentTab === tab }" @click="currentTab = tab">
-            {{ tab }}
+            {{ tab.name }}
           </button>
         </div>
 
         <div
-          class="lg:container mx-auto bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:h-[calc(100vh-400px)] h-[calc(100vh-200px)] relative">
+          class=" window lg:container mx-auto bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:h-[calc(100vh-400px)] h-[calc(100vh-200px)] relative overflow-y-scroll mt-10">
           <!-- tab1 content -->
           <div v-if="currentTab === 'Maths'"
-            class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40">
+            class="flex justify-between flex-col gap-3 h-full pb-40">
 
             <!-- Content -->
             <div>
 
-              IB ACIO is a graduate-level examination conducted by the Ministry of Home Affairs (MHA) for the
-                            recruitment of Intelligence Bureau Assistant Central Intelligence Officer. An official IB ACIO
-                            2022 notification has been released by the MHA through an employment advertisement to recruit
-                            eligible candidates for the post of ACIO Grade-I & II/ Executive, JIO-I& II/ Executive, and
-                            other posts. Going by the advertisement, a total of 766 vacancies are to be filled up through
-                            this recruitment drive. <br>
-              <br>
-
-              
+            <pre>{{ apiData }}</pre>
             </div>
 
             <!-- Extras -->
@@ -76,16 +68,15 @@
   </div>
 </template>
 <script setup>
-// import axios from 'axios';
+import axios from 'axios';
 // const route = useRoute();
-const tabs = ['Maths', 'Urdu', 'Islamiat', 'Current affairs', 'General Knowledge', 'English', 'English Advanced', 'prerequisite', 'Past papers', 'General Knowledge', 'English', 'English Advanced']
+// const tabs = ['Maths', 'Urdu', 'Islamiat', 'Current affairs', 'General Knowledge', 'English', 'English Advanced', 'prerequisite', 'Past papers', 'General Knowledge', 'English', 'English Advanced']
 const currentTab = ref('Maths')
-// const apiData = ref([]);
-// axios(`https://dsystem.one/moc_api/api.php?api_type=GET_JOB_ALL_DETAILS&job_id=${route.params.id}`, {
-//   method: "GET"
+const apiData = ref([]);
+axios(`https://dsystem.one/moc_api/api.php?api_type=GET_ALL_SUBJECT`, {
+  method: "GET"
 
-// }).then((response) => {
-//   apiData.value = response.data;
-// }).catch((err) => {
-// });
+}).then((response) => {
+  apiData.value = response.data;
+})
 </script>
