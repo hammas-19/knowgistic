@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col md:flex-row justify-between gap-10 items-center md:items-start max-w-7xl mx-auto px-5">
     <!-- Why Choose Knowgistic's Subject-wise Prep? -->
-    <div class="flex flex-col gap-5 md:w-1/2 w-full md:max-w-full max-w-lg">
+    <div id="WhyKnowgistic" class="flex flex-col gap-5 md:w-1/2 w-full md:max-w-full max-w-lg">
       <h3 class="text-xl text-ebonyClay font-semibold">
         Why Choose Knowgistic's Subject-wise Prep?
       </h3>
@@ -36,7 +36,7 @@
         </span>
       </div>
     </div>
-    <div class="flex flex-col gap-5 md:w-1/2 w-full md:max-w-full max-w-lg">
+    <div id="AcademicAdventure" class="flex flex-col gap-5 md:w-1/2 w-full md:max-w-full max-w-lg">
       <h3 class="text-xl text-ebonyClay font-semibold">
         Begin Your Academic Adventure with Knowgistic
       </h3>
@@ -45,6 +45,5 @@
         on a trajectory towards excellence.
       </p>
     </div>
-
   </div>
 </template>

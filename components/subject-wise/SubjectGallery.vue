@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto bg-whiteLilac rounded-lg p-5 grid md:grid-cols-4 grid-cols-2 justify-items-center gap-5">
+  <div id="Subjects" class="max-w-7xl mx-auto bg-whiteLilac rounded-lg p-5 grid md:grid-cols-4 grid-cols-2 justify-items-center gap-5">
     <ShowCard v-for="(items, index) in courseData" :key="index" :image="items.image" :name="items.from" />
   </div>
 </template>
