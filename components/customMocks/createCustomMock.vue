@@ -1,51 +1,68 @@
-<style scoped>
-.main::-webkit-scrollbar-track {
-  background-color: #e9e3ff;
-
-}
-
-.main::-webkit-scrollbar {
-  width: 6px;
-  background-color: #F5F5F5;
-}
-
-.main::-webkit-scrollbar-thumb {
-  background-color: #d5cfe9;
-  background-image: -webkit-linear-gradient(90deg,
-      #dbddef 0%,
-      #5F30E2 25%,
-      transparent 100%)
-}
-
-.card::-webkit-scrollbar-track {
-  background-color: #e9e3ff;
-
-}
-
-.card::-webkit-scrollbar {
-  width: 6px;
-  background-color: #F5F5F5;
-}
-
-.card::-webkit-scrollbar-thumb {
-  background-color: #d5cfe9;
-  background-image: -webkit-linear-gradient(90deg,
-      #dbddef 0%,
-      #5F30E2 25%,
-      transparent 100%)
-}
-</style>
 <template>
-  <div class="flex items-center gap-2 flex-col w-full h-screen relative bg-selago">
-
-    <div class="w-full flex container justify-between md:items-center items-end md:py-5 py-3 mx-auto">
-      <NuxtLink to="/"><img src="/Logo.svg" class="md:w-80" alt=""></NuxtLink>
-
-      <h1 class="text-comet font-semibold md:text-4xl text-xl">Create Mocks</h1>
-    </div>
-
     <div
-      class="main lg:container mx-auto  flex lg:flex-row flex-col gap-5 justify-between items-center lg:items-start border-[3px] border-dashed border-whiteLilac rounded-3xl h-[calc(100vh-200px)] overflow-y-scroll bg-white">
+      class="max-w-7xl mx-auto  flex lg:flex-row flex-col gap-5 justify-between items-center lg:items-start border border-dashed border-purplHeart rounded-3xl">
+
+            <!-- Preview -->
+        <div class="flex flex-col gap-5 p-5">
+          <h1 class="text-3xl font-semibold text-comet">
+            Preview:
+          </h1>
+
+          <!-- Card -->
+          <div>
+
+            <div
+              class="md:w-[580px] w-[300px]  h-[460px] md:h-[463px] flex md:flex-row flex-col-reverse gap-2 rounded-3xl p-2shadow-2xl relative">
+
+              <!-- fading div -->
+              <div class="absolute w-[95%] md:w-[48%] md:h-20 h-14 bottom-2 bg-cardFade mx-auto rounded-b-3xl">
+              </div>
+
+              <!-- No of contents -->
+              <div
+                class="absolute w-[95%] md:w-[48%] h-10 top-[111px] md:top-2 bg-[#ffffff7f] backdrop-blur-[6px] mx-auto rounded-t-3xl pl-10 pt-3">
+                <span class="text-base font-jost ">You will cover:</span>
+              </div>
+
+              <!-- Info -->
+              <div class="card flex flex-col gap-3 p-3 rounded-3xl bg-[#f3f1fc] md:w-1/2 w-full overflow-y-scroll pt-12">
+
+                <!-- {{ subjectOptions }} -->
+                <div class="flex items-center justify-between" v-for="items in subjectOptions" :key="items">
+
+                  <span v-show="items.selected_ratio" class="md:text-sm text-sm text-ebonyClay font-medium">
+                    {{ items.from }}
+                  </span>
+                  <span v-show="items.selected_ratio"
+                    class=" w-10 h-10 text-white font-bold text-sm text-center bg-purplHeart rounded-full  flex items-center justify-center ">
+                    {{ items.selected_ratio }}%
+                  </span>
+
+                </div>
+
+              </div>
+
+              <!-- ImageGraphy -->
+              <div class="h-full md:w-1/2 w-full rounded-3xl bg-midHeart relative text-4xl text-white">
+
+                <div class="absolute w-full text-center md:bottom-5 bottom-0 min-h-[95px]">
+                  <h1 class="text-4xl font-bold font-jost">{{ selectedMock }}</h1>
+
+                  <span
+                    class="px-8 py-2 text-center font-medium text-sm rounded-full hover:bg-white hover:text-purplHeart hover:shadow-xl transition-all text-white border-2 border-white cursor-pointer">
+                    Start Journey
+                  </span>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
 
       <!-- Form sec -->
       <div class="inputs w-full md:w-1/2 p-5">
@@ -92,78 +109,10 @@
 
       </div>
 
-      <!-- Preview -->
-      <div class="flex flex-col gap-5 p-5">
-        <h1 class="text-3xl font-semibold text-comet">
-          Preview:
-        </h1>
-
-        <!-- Card -->
-        <div>
-
-          <div
-            class="md:w-[580px] w-[300px]  h-[460px] md:h-[463px] flex md:flex-row flex-col-reverse gap-2 rounded-3xl p-2 bg-white shadow-2xl relative">
-
-            <!-- fading div -->
-            <div class="absolute w-[95%] md:w-[48%] md:h-20 h-14 bottom-2 bg-cardFade mx-auto rounded-b-3xl">
-            </div>
-
-            <!-- No of contents -->
-            <div
-              class="absolute w-[95%] md:w-[48%] h-10 top-[111px] md:top-2 bg-[#ffffff7f] backdrop-blur-[6px] mx-auto rounded-t-3xl pl-10 pt-3">
-              <span class="text-base font-jost ">Users will cover:</span>
-            </div>
-
-            <!-- Info -->
-            <div class="card flex flex-col gap-3 p-3 rounded-3xl bg-[#f3f1fc] md:w-1/2 w-full overflow-y-scroll pt-12">
-
-              <!-- {{ subjectOptions }} -->
-              <div class="flex items-center justify-between" v-for="items in subjectOptions" :key="items">
-
-                <span v-show="items.selected_ratio" class="md:text-sm text-sm text-ebonyClay font-medium">
-                  {{ items.from }}
-                </span>
-                <span v-show="items.selected_ratio"
-                  class=" w-10 h-10 text-white font-bold text-sm text-center bg-purplHeart rounded-full  flex items-center justify-center ">
-                  {{ items.selected_ratio }}%
-                </span>
-
-              </div>
-
-            </div>
-
-            <!-- ImageGraphy -->
-            <div class="h-full md:w-1/2 w-full rounded-3xl bg-midHeart relative text-4xl text-white">
-
-              <div class="absolute w-full text-center md:bottom-5 bottom-0 min-h-[95px]">
-                <h1 class="text-4xl font-bold font-jost">{{ selectedMock }}</h1>
-
-                <span
-                  class="px-8 py-2 text-center font-medium text-sm rounded-full hover:bg-white hover:text-purplHeart hover:shadow-xl transition-all text-white border-2 border-white cursor-pointer">
-                  Start Journey
-                </span>
-
-              </div>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
-
-  </div>
 </template>
 <script setup>
-definePageMeta({
-  layout: ""
-});
-
-
 const mockData = [
   {
     name: "Job-1",

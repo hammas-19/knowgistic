@@ -78,7 +78,7 @@
 
         </div>
         <span class="md:w-1/3 w-full flex justify-center">
-          <NuxtLink to="/auth/signUp">
+          <NuxtLink to="/customMocks">
             <ButtonFancy class="px-3 py-2 text-ebonyClay text-base">
               <template #text>
                 Get started
