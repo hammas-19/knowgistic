@@ -134,8 +134,8 @@
         class="w-full md:max-w-[800px]  flex flex-col h-fit items-center md:px-10 gap-10 justify-center self-center">
         <NuxtLink to="/auth/signUp" class="p-2 mx-5 text-center bg-midHeart rounded-md text-white">Start Learning
         </NuxtLink>
-        <div class="md:p-5 p-2 rounded-lg relative border border-whiteLilac bg-selago">
-          <span class="text-sm text-comet px-3 py-1 bg-selago border border-whiteLilac rounded-md md:-top-3 -top-5 absolute">
+        <div class="md:p-5 p-2 rounded-lg relative border border-purplHeart border-dashed bg-selago">
+          <span class="text-sm text-comet px-3 py-1 bg-selago border border-purplHeart border-dashed rounded-md -top-5 absolute">
             Why Choose Us?
           </span>
           <div class="grid md:grid-cols-3 justify-items-center grid-cols-2 md:gap-2 gap-5">
@@ -226,7 +226,7 @@
               class="absolute bottom-[23%] right-[11.4%] animate-pulse md:w-auto w-[60px]" style="animation-duration: 3s;"
               alt="">
 
-            <img src="/images/hero/heroimage.webp"
+            <img src="/images/hero/hero-image-boy.png"
               class="w-full lg:max-h-[750px] md:max-h-[578px] max-h-[500px] h-full max-w-[647px]" alt="">
           </div>
 
