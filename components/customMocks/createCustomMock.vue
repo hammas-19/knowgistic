@@ -15,17 +15,17 @@
               class="md:w-[580px] w-[300px]  h-[460px] md:h-[463px] flex md:flex-row flex-col-reverse gap-2 rounded-3xl p-2shadow-2xl relative">
 
               <!-- fading div -->
-              <div class="absolute w-[95%] md:w-[48%] md:h-20 h-14 bottom-2 bg-cardFade mx-auto rounded-b-3xl">
+              <div class="absolute w-[95%] md:w-[48%] md:h-20 h-14 bottom-[1px] bg-cardFade mx-auto rounded-b-3xl">
               </div>
 
               <!-- No of contents -->
               <div
-                class="absolute w-[95%] md:w-[48%] h-10 top-[111px] md:top-2 bg-[#ffffff7f] backdrop-blur-[6px] mx-auto rounded-t-3xl pl-10 pt-3">
+                class="absolute w-[95%] md:w-[48%] h-10 top-[111px] md:top-1 bg-[#ffffff7f] backdrop-blur-[6px] mx-auto rounded-t-3xl pl-10 pt-3">
                 <span class="text-base font-jost ">You will cover:</span>
               </div>
 
               <!-- Info -->
-              <div class="card flex flex-col gap-3 p-3 rounded-3xl bg-[#f3f1fc] md:w-1/2 w-full overflow-y-scroll pt-12">
+              <div class="window card flex flex-col gap-3 p-3 rounded-3xl bg-[#f3f1fc] md:w-1/2 w-full overflow-y-scroll pt-12 border border-dashed border-purplHeart">
 
                 <!-- {{ subjectOptions }} -->
                 <div class="flex items-center justify-between" v-for="items in subjectOptions" :key="items">

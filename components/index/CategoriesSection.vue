@@ -62,7 +62,7 @@
             Custom mock exams
           </h3>
           <p class="text-sm text-comet">
-            Ace your exams with custom mock exams -
+            Ace your exams with custom mock exams
           </p>
         </div>
       </div>
@@ -70,8 +70,10 @@
         class="window bg-selago rounded-xl p-2 md:p-5 flex flex-col md:flex-row md:gap-10 gap-2 items-center justify-between max-h-[656px] md:bg-[url('/images/categories/BackgroundLines.png')] bg-contain bg-no-repeat bg-right">
         <div class="flex flex-col max-w-[520px] w-full gap-3 justify-center">
 
-          <span class="text-ebonyClay font-medium text-xs">....</span>
-          <span class="text-2xl font-bold text-ebonyClay">Ace your exams with custom mock exams -</span>
+          <span class="text-ebonyClay font-medium text-xs">
+            Start Your Customized Academic Journey with Knowgistic. With our Custom Mock Exams, you're in control. Design your study sessions, engage with our top-tier content, and confidently stride towards academic success.
+          </span>
+          <span class="text-2xl font-bold text-ebonyClay">Focused Learning for Every Aspiring Student</span>
           <span class="text-comet text-xs">Tailor your exam content, questions, format, and difficulty level to
             fit your study goals with our user-friendly interface.
           </span>

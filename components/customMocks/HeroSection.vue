@@ -4,13 +4,14 @@
       <div class="flex flex-col gap-5 md:w-1/2 w-full md:max-w-full max-w-lg">
         <h1 class="text-3xl text-ebonyClay font-semibold">
           Custom mock exams
-            <br>
+          <br>
           <span class="text-base text-comet font-medium">
-            Ace your exams with custom mock exams -
+            Focused Learning for Every Aspiring Student
           </span>
         </h1>
         <p class="md:text-sm text-xs text-ebonyClay">
-          Tailor your exam content, questions, format, and difficulty level to fit your study goals with our user-friendly interface.
+          At Knowgistic, we understand the value of concentrated study. Our Custom Mock Exams allow you to delve into
+          subjects of your choice, ensuring you're always on track to meet your academic goals.
         </p>
 
       </div>
@@ -42,5 +43,6 @@
 
         </div>
       </div>
-  </div>
-</section></template>
+    </div>
+  </section>
+</template>
