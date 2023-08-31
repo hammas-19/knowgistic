@@ -143,7 +143,7 @@ const NavbarLink = [
    },
    {
       name: "Mock exams",
-      href: "/",
+      href: "/mockExams",
    },
    {
       name: "Custom mocks",
@@ -165,7 +165,6 @@ const NavbarLink = [
    //    name: "profile view",
    //    href: "/userDashboard/[slug]",
    // }
-
 ];
 
 </script>
