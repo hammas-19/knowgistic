@@ -138,12 +138,20 @@ const isOpenBurgerMenu = ref(false);
 
 const NavbarLink = [
    {
-      name: "Current Jobs",
-      href: "/govtJobs",
+      name: "Exlopre",
+      href: "/",
    },
    {
-      name: "Contact Us",
-      href: "/contactUs",
+      name: "Mock exams",
+      href: "/",
+   },
+   {
+      name: "Custom mocks",
+      href: "/customMocks",
+   },
+   {
+      name: "Subject-wise",
+      href: "/subject-wise",
    },
    {
       name: "About Us",
@@ -153,10 +161,10 @@ const NavbarLink = [
       name: "Blogs",
       href: "/blog",
    },
-   {
-      name: "profile view",
-      href: "/userDashboard/[slug]",
-   }
+   // {
+   //    name: "profile view",
+   //    href: "/userDashboard/[slug]",
+   // }
 
 ];
 
