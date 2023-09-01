@@ -11,7 +11,7 @@
       <div v-if="currentTab == 'Government Job Mock Exams'"
         class="grid md:grid-cols-4 grid-cols-2 justify-items-center gap-5">
         <div v-for="(items, index) in apiData" :key="index">
-          <NuxtLink :to="/categories/ + items.id">
+          <NuxtLink :to="/mockExams/ + items.id">
             <JobElement :title="items.title" :dated="items.test_date" :posts="items.posts" />
           </NuxtLink>
         </div>
