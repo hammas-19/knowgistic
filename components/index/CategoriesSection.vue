@@ -53,7 +53,7 @@
       </div>
     </div>
     <!-- Custom Mock -->
-    <div>
+    <!-- <div>
       <div
         class=" text-ebonyClay py-8 bg-[url('/images/categories/sectionBannerBg1.svg')] rounded-2xl bg-center bg-cover bg-no-repeat bg-selago mb-2 ">
         <div class="ml-5 p-2 bg-selago w-fit rounded-lg border border-purplHeart border-dashed">
@@ -89,7 +89,7 @@
           </NuxtLink>
         </span>
       </div>
-    </div>
+    </div> -->
     <!-- Subject-wise Preparation -->
     <div>
       <div

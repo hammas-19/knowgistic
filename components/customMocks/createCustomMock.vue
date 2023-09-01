@@ -1,6 +1,6 @@
 <template>
     <div
-      class="max-w-7xl mx-auto  flex lg:flex-row flex-col gap-5 justify-between items-center lg:items-start border border-dashed border-purplHeart rounded-3xl">
+      class="max-w-7xl mx-auto  flex lg:flex-row flex-col gap-5 justify-between items-center lg:items-start ">
 
             <!-- Preview -->
         <div class="flex flex-col gap-5 p-5">

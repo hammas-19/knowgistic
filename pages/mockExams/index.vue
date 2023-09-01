@@ -1,7 +1,7 @@
 <template>
   <div class="bg-selago">
-    <MockExamsHeroSection />
-    <MockExamsDetailSection class="py-16" />
-    <MockExamsCategegoriesSec />
+    <MockExamsHeroSection  />
+    <!-- <MockExamsDetailSection /> -->
+    <MockExamsCategegoriesSec class="py-16" />
   </div>
 </template>
