@@ -26,7 +26,7 @@
             <div class="lg:container mx-auto px-2 py-2 md:py-24">
                 <div class="flex md:justify-center justify-evenly md:gap-8 gap-3 py-8">
                     <button v-for="tab in tabs" :key="tab"
-                        class="text-ebonyClay md:px-10 text-xs md:text-lg px-3 transition-all py-1 font-semibold rounded-2xl bg-selago"
+                        class="text-ebonyClay md:px-10 text-xs md:text-lg px-3 transition-all py-1 font-semibold rounded-2xl bg-selago border border-dashed border-purplHeart"
                         :class="{ 'bg-[#5F30E2] text-[#fff] border-nectarine': currentTab === tab }"
                         @click="currentTab = tab">
                         {{ tab }}
@@ -34,7 +34,7 @@
                 </div>
 
                 <div
-                    class="bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:h-[calc(100vh-400px)] h-[calc(100vh-200px)] relative">
+                    class="bg-selago md:p-10 p-2 rounded-2xl text-comet md:text-lg text-sm md:h-[calc(100vh-400px)] h-[calc(100vh-200px)] relative border border-dashed border-purplHeart">
                     <!-- tab1 content -->
                     <div v-if="currentTab === 'Details'"
                         class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40">
@@ -67,7 +67,7 @@
                     </div>
 
                     <!-- tab2 content -->
-                    <div v-if="currentTab === 'prerequisite'"
+                    <div v-if="currentTab === 'Mocks'"
                         class="window flex justify-between flex-col gap-3 h-full overflow-y-scroll pb-40">
 
                         <CategoryPreReqEl />
@@ -93,7 +93,7 @@
 import axios from 'axios';
 import { list } from 'postcss';
 const route = useRoute();
-const tabs = ['Details', 'prerequisite', 'Past papers']
+const tabs = ['Details', 'Mocks', 'Past papers']
 const currentTab = ref('Details')
 const apiData = ref([]);
 axios(`https://dsystem.one/moc_api/api.php?api_type=GET_JOB_ALL_DETAILS&job_id=${route.params.id}`, {
@@ -101,8 +101,8 @@ axios(`https://dsystem.one/moc_api/api.php?api_type=GET_JOB_ALL_DETAILS&job_id=$
 
 }).then((response) => {
     apiData.value = response.data;
-}).catch((err) => {
-});
+})
+
 </script>
 
 <style scoped>
